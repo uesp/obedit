@@ -1,0 +1,1072 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../tes4lib;./;devil/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\obedit.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\obedit.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x1009</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\obedit.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\obedit.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../tes4lib;./;devil/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\obedit.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\obedit.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x1009</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\obedit.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\obedit.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ObActiView.cpp" />
+    <ClCompile Include="ObAlchView.cpp" />
+    <ClCompile Include="ObAmmoView.cpp" />
+    <ClCompile Include="ObAppaView.cpp" />
+    <ClCompile Include="dialogs\obarmorview.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="ObBatchEditDlg.cpp" />
+    <ClCompile Include="dialogs\obbipedpartsdlg.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="ObBipedPartsListDlg.cpp" />
+    <ClCompile Include="ObBookView.cpp" />
+    <ClCompile Include="ObClotView.cpp" />
+    <ClCompile Include="ObCntoEditDlg.cpp" />
+    <ClCompile Include="ObContView.cpp" />
+    <ClCompile Include="ObEffectEditDlg.cpp" />
+    <ClCompile Include="dialogs\obenchview.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="ObFindDlg.cpp" />
+    <ClCompile Include="ObFlorView.cpp" />
+    <ClCompile Include="ObFurnView.cpp" />
+    <ClCompile Include="ObIngrView.cpp" />
+    <ClCompile Include="ObKeymView.cpp" />
+    <ClCompile Include="ObLighView.cpp" />
+    <ClCompile Include="ObLvlcView.cpp" />
+    <ClCompile Include="ObLvlEditDlg.cpp" />
+    <ClCompile Include="ObLvliView.cpp" />
+    <ClCompile Include="ObLvspView.cpp" />
+    <ClCompile Include="ObMiscView.cpp" />
+    <ClCompile Include="ObScptView.cpp" />
+    <ClCompile Include="ObScriptErrorView.cpp" />
+    <ClCompile Include="ObSgstView.cpp" />
+    <ClCompile Include="OBSlgmView.cpp" />
+    <ClCompile Include="ObSounView.cpp" />
+    <ClCompile Include="ObSpelView.cpp" />
+    <ClCompile Include="ObStatView.cpp" />
+    <ClCompile Include="ObWeapView.cpp" />
+    <ClCompile Include="dialogs\obeditdlghandler.cpp" />
+    <ClCompile Include="dialogs\obrecorddialog.cpp" />
+    <ClCompile Include="ObSelectRecordDlg.cpp" />
+    <ClCompile Include="ColorStatic.cpp" />
+    <ClCompile Include="ErrorBar.cpp" />
+    <ClCompile Include="obbatchlistctrl.cpp" />
+    <ClCompile Include="ObImageCtrl.cpp" />
+    <ClCompile Include="ObInputDialog.cpp" />
+    <ClCompile Include="ObPromptDlg.cpp" />
+    <ClCompile Include="..\tes4lib\windows\obrecordlistctrl.cpp" />
+    <ClCompile Include="..\tes4lib\windows\obrecordtreectrl.cpp" />
+    <ClCompile Include="..\tes4lib\windows\obrecordvirtuallistctrl.cpp" />
+    <ClCompile Include="..\tes4lib\windows\scbarcf.cpp" />
+    <ClCompile Include="..\tes4lib\windows\scbarg.cpp" />
+    <ClCompile Include="..\tes4lib\windows\sizecbar.cpp" />
+    <ClCompile Include="..\tes4lib\windows\tabctrlsheet.cpp" />
+    <ClCompile Include="UndoBar.cpp" />
+    <ClCompile Include="aboutdlg.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ChildFrmFix.cpp" />
+    <ClCompile Include="ChildFrmScript.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="obeditView.cpp" />
+    <ClCompile Include="ObErrorDlg.cpp" />
+    <ClCompile Include="ObFileTreeDlg.cpp" />
+    <ClCompile Include="ObFindBinaryDlg.cpp" />
+    <ClCompile Include="ObLoadDlg.cpp" />
+    <ClCompile Include="obprogressdlg.cpp" />
+    <ClCompile Include="obresourceview.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\csvfile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\filebuffer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obcallback.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obconfigentry.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obconfigfile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\oberror.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\oberrorhandler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obfile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\oblogfile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obmemfile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obptrarray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obtime.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obutils.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\sstring.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\textutils.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obachrrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obacrerecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obactirecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obalchrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obammorecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obaniorecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obapparecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obarmorecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obbasereccont.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obbaserecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obbaserefrrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obbookrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obbsgnrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obcellrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obclmtrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obclotrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obcontrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obcrearecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obdialrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obdoorrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obeffitemrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obenchrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obfactrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obflorrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obfurnrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obidlerecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obidrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obinforecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obingrrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obitem1record.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obitem2record.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obkeymrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\oblandrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\oblighrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\oblscrrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obltexrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\oblvlcrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\oblvlirecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\oblvsprecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obmgefrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obmiscrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obnpcrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obpackrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obpgrdrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obqustrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obracerecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obreccont.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obrefrrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obregnrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obscptrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obsgstrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obslgmrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obsounrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obspelrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obstatrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obtes4record.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obwatrrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obweaprecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obwrldrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obwthrrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obctdasubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obctdtsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obdatasubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obefitsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obenitsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obformidarraysubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obhedrsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obnamesubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obpgrlsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obrdgssubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obrdotsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obrdsdsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obrdwtsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obscitsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obspitsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obstring1subrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obstringsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obsubreccont.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obwlstsubrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\groups\obfilegroup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\groups\obgroup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\groups\obgrupcont.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\groups\obtypegroup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obmultirecordhandler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obsimplerecordhandler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obundoitem.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\charclass.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\charclassarray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\customcompiler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\obfixedparser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="obscripterrors.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\obscriptfunction.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\obscriptfunctions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\obscriptutils.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\scansourcestring.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\tokentable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\tokentablearray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\tokentableresult.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\tokentablerow.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\tokentype.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\tokentypearray.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obeventhandler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obbsafile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obbsafilerecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obbsafolder.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obresourcefile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obresourcefolder.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obresourcehandler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obresourceinstance.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obcheckrecord.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obespfile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obexport.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obfields.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obimport.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obmoddefs.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obrecordcreate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\windows\obrecordfilter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obrectype.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="obedit.cpp" />
+    <ClCompile Include="obeditDoc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="obedit.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="devil\lib\DevIL.lib" />
+    <Library Include="devil\lib\ILU.lib" />
+    <Library Include="devil\lib\ILUT.lib" />
+    <Library Include="..\tes4lib\common\zlib\zdll.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ObActiView.h" />
+    <ClInclude Include="ObAlchView.h" />
+    <ClInclude Include="ObAmmoView.h" />
+    <ClInclude Include="ObAppaView.h" />
+    <ClInclude Include="dialogs\obarmorview.h" />
+    <ClInclude Include="ObBatchEditDlg.h" />
+    <ClInclude Include="dialogs\obbipedpartsdlg.h" />
+    <ClInclude Include="ObBipedPartsListDlg.h" />
+    <ClInclude Include="ObBookView.h" />
+    <ClInclude Include="ObClotView.h" />
+    <ClInclude Include="ObContView.h" />
+    <ClInclude Include="ObEffectEditDlg.h" />
+    <ClInclude Include="dialogs\obenchview.h" />
+    <ClInclude Include="ObFindDlg.h" />
+    <ClInclude Include="ObFlorView.h" />
+    <ClInclude Include="ObFurnView.h" />
+    <ClInclude Include="ObIngrView.h" />
+    <ClInclude Include="ObKeymView.h" />
+    <ClInclude Include="ObLighView.h" />
+    <ClInclude Include="ObLvlcView.h" />
+    <ClInclude Include="ObLvliView.h" />
+    <ClInclude Include="ObLvspView.h" />
+    <ClInclude Include="ObMiscView.h" />
+    <ClInclude Include="ObScptView.h" />
+    <ClInclude Include="ObSgstView.h" />
+    <ClInclude Include="OBSlgmView.h" />
+    <ClInclude Include="ObSounView.h" />
+    <ClInclude Include="ObSpelView.h" />
+    <ClInclude Include="ObStatView.h" />
+    <ClInclude Include="ObWeapView.h" />
+    <ClInclude Include="dialogs\obeditdlghandler.h" />
+    <ClInclude Include="ObLvlEditDlg.h" />
+    <ClInclude Include="dialogs\obrecorddialog.h" />
+    <ClInclude Include="ObSelectRecordDlg.h" />
+    <ClInclude Include="ColorStatic.h" />
+    <ClInclude Include="ErrorBar.h" />
+    <ClInclude Include="obbatchlistctrl.h" />
+    <ClInclude Include="ObCntoEditDlg.h" />
+    <ClInclude Include="ObImageCtrl.h" />
+    <ClInclude Include="ObInputDialog.h" />
+    <ClInclude Include="ObPromptDlg.h" />
+    <ClInclude Include="..\tes4lib\windows\obrecordlistctrl.h" />
+    <ClInclude Include="..\tes4lib\windows\obrecordtreectrl.h" />
+    <ClInclude Include="..\tes4lib\windows\obrecordvirtuallistctrl.h" />
+    <ClInclude Include="ObScriptErrorView.h" />
+    <ClInclude Include="..\tes4lib\windows\scbarcf.h" />
+    <ClInclude Include="..\tes4lib\windows\scbarg.h" />
+    <ClInclude Include="..\tes4lib\windows\sizecbar.h" />
+    <ClInclude Include="..\tes4lib\windows\tabctrlsheet.h" />
+    <ClInclude Include="UndoBar.h" />
+    <ClInclude Include="aboutdlg.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ChildFrmFix.h" />
+    <ClInclude Include="ChildFrmScript.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="obeditView.h" />
+    <ClInclude Include="ObErrorDlg.h" />
+    <ClInclude Include="ObFileTreeDlg.h" />
+    <ClInclude Include="ObFindBinaryDlg.h" />
+    <ClInclude Include="ObLoadDlg.h" />
+    <ClInclude Include="obprogressdlg.h" />
+    <ClInclude Include="obresourceview.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obachrrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obacrerecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obactirecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obalchrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obammorecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obaniorecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obapparecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obarmorecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obbasereccont.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obbaserecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obbaserefrrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obbookrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obbsgnrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obcellrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obclmtrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obclotrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obcontrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obcrearecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obdialrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obdoorrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obeffitemrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obenchrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obfactrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obflorrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obfurnrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obidlerecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obidrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obinforecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obingrrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obitem1record.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obitem2record.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obkeymrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\oblandrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\oblighrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\oblscrrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obltexrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\oblvlcrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\oblvlirecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\oblvsprecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obmgefrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obmiscrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obnpcrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obpackrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obpgrdrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obqustrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obracerecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obreccont.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obrefrrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obregnrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obscptrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obsgstrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obslgmrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obsounrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obspelrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obstatrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obtes4record.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obwatrrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obweaprecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obwrldrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obwthrrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obammodatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obappadatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obarmodatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obatxtsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obbookdatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obbytesubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obclotdatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obcntosubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obcontdatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obctdasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obctdtsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obdatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obdnamsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obdwordsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obefitsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obenamsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obenit8subrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obenitsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obfloatsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obformidarraysubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obformidsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obhedrsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obidledatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obingrenitsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obint64subrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obkeymdatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\oblighdatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\oblnamsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\oblongsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\oblvlosubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obmgefdatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obmiscdatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obnamesubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obpfpcsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obpgrlsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obpldtsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obposanglesubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obpositionsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obptdtsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obqstasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obrdgssubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obrdotsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obrdsdsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obrdwtsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obrefrdatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obschrsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obscitsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obscrosubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obsgstdatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obslgmdatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obslsdsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obsnamsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obsndxsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obspitsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obstring1subrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obstringsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obsubreccont.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obvnamsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obvtexsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obweapdatasubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obwlstsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obwordsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obxespsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obxlocsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obxnamsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obxtelsubrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\groups\obblockgroup.h" />
+    <ClInclude Include="..\tes4lib\modfile\groups\obfilegroup.h" />
+    <ClInclude Include="..\tes4lib\modfile\groups\obformidgroup.h" />
+    <ClInclude Include="..\tes4lib\modfile\groups\obgridgroup.h" />
+    <ClInclude Include="..\tes4lib\modfile\groups\obgroup.h" />
+    <ClInclude Include="..\tes4lib\modfile\groups\obgrupcont.h" />
+    <ClInclude Include="..\tes4lib\modfile\groups\obtypegroup.h" />
+    <ClInclude Include="..\tes4lib\modfile\obmultirecordhandler.h" />
+    <ClInclude Include="..\tes4lib\modfile\obrecordhandler.h" />
+    <ClInclude Include="..\tes4lib\modfile\obsimplerecordhandler.h" />
+    <ClInclude Include="..\tes4lib\modfile\obundoitem.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\charclass.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\charclassarray.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\customcompiler.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\obfixedparser.h" />
+    <ClInclude Include="obscripterrors.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\obscriptfunction.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\obscriptfunctions.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\obscriptutils.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\scansource.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\scansourcestring.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\tokentable.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\tokentablearray.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\tokentableresult.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\tokentablerow.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\tokentype.h" />
+    <ClInclude Include="..\tes4lib\modfile\compiler\tokentypearray.h" />
+    <ClInclude Include="..\tes4lib\modfile\obeventhandler.h" />
+    <ClInclude Include="..\tes4lib\modfile\oblistener.h" />
+    <ClInclude Include="..\tes4lib\modfile\oblistenevent.h" />
+    <ClInclude Include="..\tes4lib\bsafile\obbsafile.h" />
+    <ClInclude Include="..\tes4lib\bsafile\obbsafilerecord.h" />
+    <ClInclude Include="..\tes4lib\bsafile\obbsafolder.h" />
+    <ClInclude Include="..\tes4lib\bsafile\obresourcebase.h" />
+    <ClInclude Include="..\tes4lib\bsafile\obresourcefile.h" />
+    <ClInclude Include="..\tes4lib\bsafile\obresourcefolder.h" />
+    <ClInclude Include="..\tes4lib\bsafile\obresourcehandler.h" />
+    <ClInclude Include="..\tes4lib\bsafile\obresourceinstance.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obcheckrecord.h" />
+    <ClInclude Include="..\tes4lib\modfile\obespfile.h" />
+    <ClInclude Include="..\tes4lib\modfile\obexport.h" />
+    <ClInclude Include="..\tes4lib\modfile\obfields.h" />
+    <ClInclude Include="..\tes4lib\modfile\obimport.h" />
+    <ClInclude Include="..\tes4lib\modfile\obmoddefs.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obrecordfield.h" />
+    <ClInclude Include="..\tes4lib\windows\obrecordfilter.h" />
+    <ClInclude Include="..\tes4lib\modfile\records\obrecordmap.h" />
+    <ClInclude Include="..\tes4lib\modfile\obrectype.h" />
+    <ClInclude Include="devil\include\IL\config.h" />
+    <ClInclude Include="devil\include\IL\il.h" />
+    <ClInclude Include="devil\include\IL\ilu.h" />
+    <ClInclude Include="devil\include\IL\ilut.h" />
+    <ClInclude Include="..\tes4lib\common\csvfile.h" />
+    <ClInclude Include="..\tes4lib\common\dl_map.h" />
+    <ClInclude Include="..\tes4lib\common\filebuffer.h" />
+    <ClInclude Include="..\tes4lib\common\obarray.h" />
+    <ClInclude Include="..\tes4lib\common\obblockallocator.h" />
+    <ClInclude Include="..\tes4lib\common\obcallback.h" />
+    <ClInclude Include="..\tes4lib\common\obconfigentry.h" />
+    <ClInclude Include="..\tes4lib\common\obconfigfile.h" />
+    <ClInclude Include="..\tes4lib\common\oberror.h" />
+    <ClInclude Include="..\tes4lib\common\oberrorhandler.h" />
+    <ClInclude Include="..\tes4lib\common\obfile.h" />
+    <ClInclude Include="..\tes4lib\common\oblogfile.h" />
+    <ClInclude Include="..\tes4lib\common\obmemfile.h" />
+    <ClInclude Include="..\tes4lib\common\obplatform.h" />
+    <ClInclude Include="..\tes4lib\common\obptrarray.h" />
+    <ClInclude Include="..\tes4lib\common\obsimplemap.h" />
+    <ClInclude Include="..\tes4lib\common\obtime.h" />
+    <ClInclude Include="..\tes4lib\common\obtypes.h" />
+    <ClInclude Include="..\tes4lib\common\obutils.h" />
+    <ClInclude Include="..\tes4lib\common\obversion.h" />
+    <ClInclude Include="..\tes4lib\common\sstring.h" />
+    <ClInclude Include="..\tes4lib\common\textutils.h" />
+    <ClInclude Include="..\tes4lib\common\zlib\zconf.h" />
+    <ClInclude Include="..\tes4lib\common\zlib\zlib.h" />
+    <ClInclude Include="obedit.h" />
+    <ClInclude Include="obeditDoc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\armor.ico" />
+    <CustomBuild Include="res\file.bmp" />
+    <CustomBuild Include="res\find_dlg.ico" />
+    <CustomBuild Include="res\folder.bmp" />
+    <CustomBuild Include="res\obedit.ico" />
+    <CustomBuild Include="res\obedit.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\obeditDoc.ico" />
+    <CustomBuild Include="res\Toolbar.bmp" />
+    <CustomBuild Include="compiler.txt" />
+    <CustomBuild Include="displayfilters.dat">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="functions.dat">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="obedit.ini">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="obedit.log">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+    <CustomBuild Include="testtable.dat">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="testtable1.dat">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="todo.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

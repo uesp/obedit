@@ -1,0 +1,779 @@
+Script Notes:
+	- Several scripts use the call "stopcombat <actor>" which does not match the function definition. The extra
+	  parameter is ignored and not output in the compiled script.
+		- AndragilScript
+		- ArenaAggressionScript
+	- SetActorValue function called with a string actor value rather than the raw identifier.
+		- ArenaAggressionScript
+	- PlaySound called with string instead of raw record editorid.
+		- ArenaAnnouncerScript
+	- Extra endifs compiles without any error/warnings.
+		- ArenaBlueGateScript
+		- ArenaGrandChampionMatchScript
+	- Local variables can be redefined without any error/warnings
+		- ArenaGrandChampionMatchScript
+    - Some functions are set to not use a reference in the function data but is used in scripts with a reference anyways.
+	  The function definition is most likely wrong (makes sense to be a reference function).
+			- SetUnconscious 
+			- SetRestrained
+			- PlaySound3D
+			- PlaySound
+			- SetRigidBodyMass
+	- Compiler supports the float syntax ".5".
+	- Commas are used in a few function calls.
+	- Local variables can have the same name as a function.
+	- The 'GetGameSetting' function can accept a regular identifier as well as a string.
+
+Bad CS Scripts:
+
+	DarkLachanceNoteScript
+		- Extra 'endif' before 'else'
+	JskarScript
+		- Extra 'endif' not commented out
+	OblivionGateSwitch01MQ03Gates
+		- 'else if' instead of 'elseif'
+	OblivionElevatorBrokenTriggerSTUCK
+		- Extra 'endif'
+	OblivionSwitchRD004Right02
+		- 'else if' instead of 'elseif'
+	MS04BedSCRIPT
+		- Uses the expression 'ms04 < 55' where ms04 is a quest. Assumably this is supposed to be checking the 
+		  stage of the quest. Wha1t this actually does is compare the ms04 reference (pointer) to 55.
+	MQ09OneTimeLeverSCRIPT
+		- Has the statement 'Message "...", 5'. The purpose extra number at the end is unknown and not a valid syntax.
+	OBMineScript01
+	OBMineScript02
+		- Uses the statement "disable myself" where myself is a local reference. This format is not supported and should
+		  be "myself.disable".
+	OblivionGateSwitch01
+		- 'else if' instead of 'elseif'
+	MS05DreamworldBedScript
+		- Extra 'endif'
+	MGMageConversationFollowScript
+		- Extra 'endif'
+	Dark09GateLeverSCRIPT
+		- Extra 'endif'
+	TandilweScript
+		- Three extra 'endif'
+	MS39NirnrootPlantScript
+		- Extra 'endif'
+	GrommScript
+		- Redefinition of a local variable.
+	MS47ReverseInvisibilityEnchantmentScript
+		- Extra 'endif'
+	CaminaldaScript
+		- Extra 'endif'
+	MG19ChestScript
+		- Extra 'endif'
+	MS08AleronLocheScript
+		- Extra 'endif'
+	EyeOfNocturnalScript
+    BejeenScript
+		- Uses 'end gamemode' instead of just 'end'.
+	RallusOdiilSCRIPT
+		- Extra 'endif'
+	PublicanBrinaCrossChristophe
+		- Extra 'endif'
+	PublicanCheydinhalBridgeInn
+		- Extra 'endif'
+	PublicanBrumaOlavsTapandTackOlav
+		- Extra 'endif'
+	DASheogorathPotScript
+		- Extra 'endif'
+	OblivionSmallHallPressurePlate01repeatSCRIPT
+		- Local variable 'timer' defined as both a short and a float.
+	ARTrapEvilStoneAUTOFIREFireSCRIPT
+		- Extra 'endif'
+	OBTrapSmallTowerSpike01SCRIPT
+		- Extra 'else' and 'endif'. Seems to be missing the original 'if' statement.
+	CGateOPEN01SCRIPT
+		- Uses an 'else' instead of an 'elseif'
+	CGWeaponScript
+		- Extra 'endif'
+	Dark02DoorScript
+		- Extra 'endif'
+	ArenaGrandChampionMatchScript
+		- Five extra 'endif'
+	Dark08AlarmScript
+	TestMessageBoxScript
+		- Uses the unknown crime type of '5'.
+	Dark10SpecialJournalScript
+		- Extra 'endif'
+	MS13Script
+		- Extra 'endif'
+	DABoethiaCageOpenScript01
+		- Extra 'endif'
+	DAHermaeusSoulsSpell
+		- 'endif' in the wrong location (spans a begin block).
+	MQ14Script
+		- Extra 'endif'
+	MQ05SewerWheelScript01
+		- Uses strings in call to 'playgroup'
+	MS37GladeDoorScript
+		- Extra 'endif'
+	MG05RockScript
+		- Two extra 'endif'
+	MG18Script
+		- Extra 'endif'
+	Dark18MotherScript
+		- Extra 'endif'
+	Dark17DiaryScript
+		- Extra 'endif'
+	Dark09OfficersScript
+		- Extra 'endif'
+	MG09Script
+		- Extra 'endif'
+	HieronymusLexScript
+		- Uses an undefined reference 'playerref' assumably instead of 'player'.
+	Dark05AssassinatedScript
+		- Extra 'endif'
+	DemoDaedrothFight
+		- Extra 'endif'
+	ArenaBlueGateScript
+		- Extra 'endif'
+	RufioDieScript
+		- Extra 'endif'
+	ARTrapEvilStoneFireSCRIPT
+		- Uses an 'O' (letter) instead of a '0' (zero) in a messagebox '%' format specifier.
+
+				
+ToDo
+	- Check EssentialDeathReload, SetActorFullName  function for string input
+	- Check and warn for expressions like 'reference relop number' which is probably not what the scripter intended.
+	- Check Message output with display parameter.
+	- Check GetGameSetting output.
+	- Check 'ref.var' syntax as a function parameter.
+
+
+tokentableresult {
+	int        Action  { ignore moveto return error continue }
+	string     TableName
+    table*     pTable
+	string     TokenName
+    tokentype* pTokenType
+	string     Message
+}
+
+tokentablerow {
+    int				 MatchType { none charclass char string }
+	string			 CharClassName
+	charclass*		 CharClass
+	char			 Char
+	string			 StringValue
+	tokentableresult Result
+}
+
+tokentable {
+  string		 Name
+  tokentablerow  Rows[]
+  tokentablerow* pDefaultRow
+}
+
+tokentablearray {
+  tokentable Tables[]
+}
+
+sourcepos_t
+	dword linepos
+	dword charpos
+
+token_t
+	TokenType*  type
+	string      value
+	sourcepos_t StartPos
+	sourcepos_t EndPos
+
+TokenType
+	dword  id
+	string name
+	dword  flags { keep, simple, ignore, trimfirst, trimlast }
+
+sourcebuffer
+	char ReadChar()
+	int  GetLinePos()
+	int  GetCharPos()
+
+CharClasses
+	Digit		= 0..9
+	Alpha		= a..Z A..Z
+	EndLine		= \n
+	Comment		= ;
+	WhiteSpace	= space \t \r
+	//Exp  		= e E
+	//ExpAdd      = + -
+	Operator	= + - * / % & | ,
+	RelOp		= = < > !
+	Quote		= "
+	IDStart		= a..z A..Z _
+	ID			= a..z A..Z 0..9 _
+	Bracket 	= ( )
+	String      = any !\n !"
+	EndLine		= \n
+	Equal		= =
+End
+
+Tokens
+	Unknown		 = 0, keep
+	LBracket	 = 1, simple
+	RBracket	 = 2, simple
+	Plus		 = 3, simple
+	Minus		 = 4, simple
+	Mult		 = 5, simple
+	Div			 = 6, simple
+	Mod			 = 7, simple
+	And			 = 8, simple
+	Or			 = 9, simple
+	EQ			 = 10, simple
+	NEQ			 = 11, simple
+	GT			 = 12, simple
+	GTE			 = 13, simple
+	LT			 = 14, simple
+	LTE			 = 15, simple
+	String		 = 16, keep, trimfirst, trimlast
+	Identifier	 = 17, keep
+	If			 = 18, simple
+	Elseif		 = 19, simple
+	Else		 = 20, simple
+	Endif		 = 21, simple
+	Set			 = 22, simple
+	Scriptname	 = 23, simple
+	Begin		 = 24, simple
+	End			 = 25, simple
+	Comment		 = 26, ignore
+	EndLine		 = 27, simple	
+	Integer		 = 28, keep
+	Float		 = 29, keep
+	EndofProgram = 30, simple
+End
+
+Begin
+	CommentChar	= moveto Comment_Table
+	Digit		= moveto Digit_Table
+	QuoteChar	= moveto String_Table
+	IDStart		= moveto ID_Table
+	(			= return LBracket
+	)			= return RBracket
+	+			= return Plus
+	-			= return Minus
+	*			= return Mult
+	/			= return Div
+	&			= moveto And_Table
+	|			= moveto Or_Table
+	Equal		= moveto EQ_Table
+	>			= moveto GT_Table
+	<			= moveto LT_Table
+	!			= moveto NEQ_Table
+	EndLine		= return endline
+	WhiteSpace	= ignore
+	Default		= return EndofProgram
+End
+
+And_Table
+	&		= return And
+	Default = return Unknown
+End
+
+Or_Table
+	|		= return Or
+	Default = return Unknown
+End
+
+Digit_Table
+	Digit		= continue
+	Decimal		= moveto Decimal_Table
+	//ExpChar	= moveto Exp_Table
+	Else		= return Integer
+End
+
+Decimal_Table
+	Digit		= continue
+	//ExpChar	= moveto Exp_Table
+	Default		= return Float
+End
+
+Exp_Table
+	ExpAdd	= moveto ExpDigit_Table
+	Digit	= moveto ExpDigit_Table
+	Default = return Float
+End
+
+ExpDigit_Table
+	Digit	= continue
+	Default = return Float
+End
+
+String_Table
+	QuoteChar	= return String
+	StringChars = moveto String_Table
+	Default		= error "Unterminated String"
+End
+	
+ID_Table
+	IDChar	= continue
+	Default = moveto CheckKeyWord_Table
+End
+
+CheckKeyWord_Table
+	"if"			= return if
+	"endif"			= return endif
+	"set"			= return set
+	"elseif"		= return elseif
+	"else"			= return else
+	"endif"			= return endif
+	"begin"			= return begin
+	"end"			= return end
+	"scriptname"	= return scriptname
+	"scn"			= return scriptname
+	Default			= return Identifier
+End
+
+Comment_Table
+	EndLine = return Comment
+	Default = continue
+End
+
+EQ_Table
+	Equal	= return EQ
+	Default = error "Unknown '=' found"
+End
+
+GT_Table
+	Equal	= return GTE 
+	Default = return GT
+End
+
+LT_Table
+	Equal	= return LTE
+	Default = return LT
+End
+
+NEQ_Table
+	Equal	= return NEQ
+	Default = error "Unknown '!' found"
+End
+
+
+
+Simple
+	digit    == [0-9]
+	letter   == [a-zA-Z]
+	idletter == [a-zA-Z0-9_]
+
+	"+"				=> Plus
+	"-"				=> Minus
+	">="			=> GTE
+	">"				=> GT
+	"<="			=> LTE
+	"<"				=> LT
+	"!="			=> NEQ
+	"=="			=> EQ
+	"*"				=> Mult
+	"/"				=> Div
+	"%"				=> Mod
+	"&&"			=> And
+	"||"			=> Or
+	"("				=> LBracket
+	")"				=> RBracket
+	"set"			=> Set
+	"if"			=> If
+	"elseif"		=> ElseIf
+	"else"			=> Else
+	"endif"			=> EndIf
+	"scriptname"	=> ScriptName
+	"begin"			=> Begin
+	"end"			=> End
+	"\n"			=> EndLine
+
+	{letter}{idletter}*							 => Identifier
+	{digit}+									 => Integer
+	{digit}+("."{digit}*)?([eE][+-]?{digit}+)?   => Float
+	\"[^\"\n]*\"								 => String
+	";"[.]*										 => NULL //Comment
+
+	[ \t\n\r]		=> NULL		//Whitespace
+	default			=> Unknown	//Error
+
+
+
+
+
+
+Digit = 0..9
+QuoteChar = "\"" 
+Letter = a..z | A..Z
+Symbols = "~`!@#$%^&*()_+-=[]{}\|;:,./<>?'"
+SpaceChars = " " | "\t"
+StringChars = Digit | Letter | SpaceChars | Symbols
+Decimal = "."
+ExpChar = "e" | "E"
+ExpAddChar = "+" | "-" | ""
+EndStatement = "\n"
+EndLine = "\n"
+IDStart = a..z | A..Z
+IDChar = IDStart | Digit | _
+CommentChar = ";"
+
+
+Integer = Digit Digit*
+
+Exponent = ExpChar ExpAddChar Integer
+Float = Integer ((Decimal Integer) | "") (Exponent | "")
+
+String = QuoteChar StringChars* QuoteChar
+
+Comment = CommentChar Chars* EndLine
+
+-------------------------------------------------------------------------------
+
+DoMainProgram() {
+	match(scriptname)
+	match(identifier)
+	setscriptname()
+	match(newline)
+
+	while() {
+
+		if lookahead(short)
+			match(short)
+			DoAddLocal(short)
+		elseif lookahead(long)
+			match(long)
+			DoAddLocal(long)
+		elseif lookahead(float)
+			match(float)
+			DoAddLocal(float)
+		elseif lookahead(ref)
+			match(ref)
+			DoAddLocal(ref)
+		elseif lookahead(begin)
+			DoBegin()
+		elseis lookahead(newline)
+			match(newline)
+		else
+			break
+	}
+
+	match(endofprogram)
+}
+
+DoAddLocal(type) {
+	match(identifier)
+	match(newline)
+}
+
+DoBegin() {
+	match(begin)
+	DoBeginMode()
+
+	DoStatements()
+	
+	match(end)
+	match(newline)
+}
+
+DoBeginMode() {
+	match(identifier)
+	
+	while hasparam {
+		if lookahead(newline)
+			break
+		matchcurrentparam
+	}
+
+	checkmissingparams
+
+	match(newline)
+}
+
+DoStatements() {
+
+	while !lookahead(end)
+		DoStatement
+}
+
+DoStatement() {
+
+	if lookahead(if)
+		DoIf
+	elseif lookahead(return)
+		DoReturn
+	elseif lookahead(set)
+		DoSet
+	elseif lookahead(identifier)
+		DoFunction
+		match(newline)
+	elseif lookahead(end)
+		return
+	elseif lookahead(newline)
+		matchnewline
+		return
+	elseif lookahead(short)
+		match(short)
+		DoAddLocal(short)
+	elseif lookahead(long)
+		match(long)
+		DoAddLocal(long)
+	elseif lookahead(float)
+		match(float)
+		DoAddLocal(float)
+	elseif lookahead(ref)
+		match(ref)
+		DoAddLocal(ref)
+	else
+		error
+}
+
+DoIf() {
+	match(if)
+	DoExpression()
+	match(newline)
+	DoStatements()
+
+	while lookahead(elseif)
+		DoElseIf()
+
+	if lookahead(else)
+		DoElse
+
+	match(end)
+	match(newline)
+}
+
+DoElseIfExpr() {
+	match(elseif)
+	DoExpression()
+	match(newline)
+	DoStatements()
+}
+
+DoElseExpr() {
+	match(else)
+	match(newline)
+	DoStatements()
+}
+
+DoReturn()
+	match(return)
+	match(newline)
+}
+
+DoSet() {
+	match(set)
+
+	value = identifier
+	match(identifier)
+
+	if lookahead(ref)
+		DoSetRefId(value)
+	else
+		DoSetId(value)
+
+}
+
+DoSetRefId(value) {
+	match(ref)
+	match(identifier)
+
+	checkrefid()
+
+	match(to)
+	DoSimpleExpression()
+}
+	
+DoSetId(value) {
+
+	checkid()
+
+	match(to)
+	DoSimpleExpression()
+}
+
+DoFunction() {
+	value = identifier
+	match(identifier)
+
+	if lookahead(ref)
+		DoFunctionRef(value)
+	else
+		DoFunctionCall(value)
+}
+
+DoFunctionRef(value) {
+	match(ref)
+	match(identifier)
+
+	checkfuncref()
+	DoFuncParams()
+}
+
+DoFunctionCall(value) {
+	checkfunc()
+	DoFuncParams()
+}
+
+DoFuncParams() {
+	while !lookahead(newline)
+		DoFuncParam()
+
+	checkmissingparams()
+}
+
+DoFuncParam() {
+	checkhasparam()
+
+	if lookahead(number)
+		checkparam()
+		match(number)
+	elseif lookahead(float)
+		checkparam()
+		match(float)
+	elseif lookahead(identifier)
+		checkparam()
+		match(identifier)
+	elseif lookahead(string)
+		checkparam()
+		match(string)
+	elseif lookahead(newline)
+		return
+}
+
+DoExpression() {
+  while !lookahead(newline)
+
+	if lookahead(lbracket)
+		match(lbracket)
+		DoExpression()
+		match(rbracket)
+	elseif lookahead(binop)
+		match(binop)
+		DoExpression
+	elseif lookahead(relop)
+		match(relop)
+		DoSimpleExpression
+	elseif lookahead(rbracket)
+		return
+	else
+		DoSimpleExpression()
+}
+
+DoSimpleExpression() {
+
+	DoFirstSimpleTerm()
+
+	while lookahead(addop)
+		match(addop)
+		DoSimpleTerm()
+
+}
+
+DoFirstSimpleTerm() {
+	 DoFirstSimpleFactor()
+
+	 while lookahead(multop)
+		match(multop)
+		DoFirstSimpleFactor()
+}
+
+DoFirstSimpleFactor() {
+	if lookahead(sign) match(sign)
+	DoSimpleFactor()
+}
+
+
+DoSimpleTerm() {
+	DoSimpleFactor()
+
+	while lookahead(multop)
+		match(multop)
+		DoFirstSimpleFactor()
+}
+
+DoSimpleFactor() {
+
+	if lookhead(lbracket)
+		match(lbracket)
+		DoSimpleExpression()
+		match(rbracket)
+	elseif lookahead(integer)
+		match(integer)
+	elseif lookahead(float)
+		match(float)
+	elseif lookahead(identifier)
+		if function
+			DoFunction()
+		elseif global
+			match(identifier)	
+		elseif local
+			match(identifier)
+		else
+			error
+	else
+		return
+}
+
+--------------------------------------------------------
+Morrowind Expressions
+
+StartRightExpr
+			l_RFirstTermBlock
+	ADDOP	l_RTermBlock*	
+
+l_RFirstTermBlock
+			l_RFirstFactorBlock
+	MULTOP	l_RFirstFactorBlock
+
+l_RFirstFactorBlock
+	sign?
+	l_RFactorBlock
+
+l_RFactorBlock
+	(	l_RFactorBrac
+	number
+	id
+
+l_RFactorBrac
+	StartRightExpr
+	)
+
+l_RTermBlock
+			l_RFactorBlock
+	MULTOP	l_RFirstFactorBlock*
+
+
+--------------------------------------------------------
+
+	Expression     => SimpleExp Expression
+	Expression     => SimpleExp relop SimpleExp
+	Expression     => Expression boolop Expression
+	Expression     => ( Expression )
+
+    SimpleExp      => Term
+    SimpleExp      => sign Term
+    SimpleExp      => SimpleExp addop Term
+    Term           => Factor
+    Term           => Term multop Factor
+    Factor         => identifier
+    Factor         => integer
+    Factor         => float
+    Factor         => ( SimpleExp )
+
+
+-------------------------------------------------
+scn
+begin gamemode
+end
+
+output: 1D00 0000 1000 0600 0000 0400 0000 1100 0000
+
+scn
+begin menumode
+end
+
+output: 1D00 0000 1000 0800 0100 0400 0000 0000 1100 0000
+
+scn
+begin menumode 1234
+end
+
+output: 1D00 0000 1000 0D00 0100 0400 0000 0100 6E D204 0000 1100 0000
+output: 1D00 0000 1000 0D00 0100 0400 0000 0100 6E D204 0000 1100 0000

@@ -1,0 +1,4912 @@
+function
+	name = GameMode
+	Opcode = 0x0000
+	Index = 0
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = MenuMode
+	Opcode = 0x0001
+	Index = 1
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = OnActivate
+	Opcode = 0x0002
+	Index = 2
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6, Optional
+end
+function
+	name = OnAdd
+	Opcode = 0x0003
+	Index = 3
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 26, Optional
+end
+function
+	name = OnEquip
+	Opcode = 0x0004
+	Index = 4
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 26, Optional
+end
+function
+	name = OnUnequip
+	Opcode = 0x0005
+	Index = 5
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 26, Optional
+end
+function
+	name = OnDrop
+	Opcode = 0x0006
+	Index = 6
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 26, Optional
+end
+function
+	name = OnYield_unused
+	Opcode = 0x0007
+	Index = 7
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6, Optional
+end
+function
+	name = OnHit
+	Opcode = 0x0008
+	Index = 8
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6, Optional
+end
+function
+	name = OnHitWith
+	Opcode = 0x0009
+	Index = 9
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 21, Optional
+end
+function
+	name = OnDeath
+	Opcode = 0x000A
+	Index = 10
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6, Optional
+end
+function
+	name = OnMurder
+	Opcode = 0x000B
+	Index = 11
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6, Optional
+end
+function
+	name = OnKnockout
+	Opcode = 0x000C
+	Index = 12
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = OnAlarm
+	Opcode = 0x000D
+	Index = 13
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 28
+	Param2 = 6, Optional
+end
+function
+	name = OnAlarmVictim
+	Opcode = 0x000E
+	Index = 14
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 28
+	Param2 = 6, Optional
+end
+function
+	name = OnPackageStart
+	Opcode = 0x000F
+	Index = 15
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 29
+end
+function
+	name = OnPackageDone
+	shortname = OnPackageEnd
+	Opcode = 0x0010
+	Index = 16
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 29
+end
+function
+	name = ScriptEffectStart
+	Opcode = 0x0011
+	Index = 17
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ScriptEffectFinish
+	Opcode = 0x0012
+	Index = 18
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ScriptEffectUpdate
+	Opcode = 0x0013
+	Index = 19
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = OnPackageChange
+	Opcode = 0x0014
+	Index = 20
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 29
+end
+function
+	name = OnLoad
+	Opcode = 0x0015
+	Index = 21
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = OnMagicEffectHit
+	Opcode = 0x0016
+	Index = 22
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 31, Optional
+end
+function
+	name = OnSell
+	Opcode = 0x0017
+	Index = 23
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6, Optional
+end
+function
+	name = OnTrigger
+	Opcode = 0x0018
+	Index = 24
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 4, Optional
+end
+function
+	name = OnStartCombat
+	Opcode = 0x0019
+	Index = 25
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6, Optional
+end
+function
+	name = OnTriggerActor
+	Opcode = 0x001A
+	Index = 26
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 4, Optional
+end
+function
+	name = OnTriggerMob
+	Opcode = 0x001B
+	Index = 27
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 4, Optional
+end
+function
+	name = OnActorEquip
+	Opcode = 0x001C
+	Index = 28
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 21
+end
+function
+	name = OnActorUnequip
+	Opcode = 0x001D
+	Index = 29
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 21
+end
+function
+	name = OnReset
+	Opcode = 0x001E
+	Index = 30
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = Show
+	shortname = TST
+	help = Show global scripts and variables.
+	Opcode = 0x0100
+	Index = 31
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2
+end
+function
+	name = ShowVars
+	shortname = SV
+	help = Show variables on object. [player->sv]
+	Opcode = 0x0101
+	Index = 32
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowQuestVars
+	shortname = SQV
+	help = Show quest variables. [svq QuestID]
+	Opcode = 0x0102
+	Index = 33
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 14
+end
+function
+	name = ShowQuests
+	shortname = SQ
+	help = List quests.
+	Opcode = 0x0103
+	Index = 34
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleCombatStats
+	shortname = TCS
+	Opcode = 0x0104
+	Index = 35
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleSafeZone
+	shortname = TSZ
+	help = Display the television 85%% safe zone.
+	Opcode = 0x0105
+	Index = 36
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleAI
+	shortname = TAI
+	Opcode = 0x0106
+	Index = 37
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6, Optional
+end
+function
+	name = ToggleCollisionGeometry
+	shortname = TCG
+	help = Show collision geometry.
+	Opcode = 0x0107
+	Index = 38
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleMaterialGeometry
+	shortname = TMG
+	help = Show material geometry.
+	Opcode = 0x0108
+	Index = 39
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleBorders
+	shortname = TB
+	help = Show border lines for each cell.
+	Opcode = 0x0109
+	Index = 40
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleSky
+	shortname = TS
+	Opcode = 0x010A
+	Index = 41
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleLeaves
+	shortname = TLV
+	Opcode = 0x010B
+	Index = 42
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleWireframe
+	shortname = TWF
+	help = Show the world as wireframe.
+	Opcode = 0x010C
+	Index = 43
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleCollision
+	shortname = TCL
+	Opcode = 0x010D
+	Index = 44
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleDebugText
+	shortname = TDT
+	help = Show debug numbers on the screen.
+	Opcode = 0x010E
+	Index = 45
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleMenus
+	shortname = TM
+	help = Hide all the menus. Used for taking screen shots.
+	Opcode = 0x010F
+	Index = 46
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowScenegraph
+	shortname = SSG
+	help = Create a window with the full game scene graph.
+	Opcode = 0x0110
+	Index = 47
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleMagicStats
+	shortname = TMS
+	Opcode = 0x0111
+	Index = 48
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowAnim
+	shortname = SA
+	help = Show Animation and Actor status.
+	Opcode = 0x0112
+	Index = 49
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = Show1stPerson
+	shortname = S1ST
+	help = Show the 1st person Model from the 3rd person camera. If in 3rd person mode it will show both.
+	Opcode = 0x0113
+	Index = 50
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = Help
+	help = Show this help.
+	Opcode = 0x0114
+	Index = 51
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = TogglePathGrid
+	shortname = TPG
+	help = Toggle blocked display.
+	Opcode = 0x0115
+	Index = 52
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = TogglePathLine
+	shortname = TPL
+	help = Toggle path display.
+	Opcode = 0x0116
+	Index = 53
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = PickRefByID
+	shortname = PRID
+	help = Select a reference by id for the console.
+	Opcode = 0x0117
+	Index = 54
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 4
+end
+function
+	name = SetLightingPasses
+	shortname = SLP
+	help = 4 (0/1) values. amb|diff|tex|spec ex: 1010
+	Opcode = 0x0118
+	Index = 55
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = ToggleLODLand
+	shortname = TLL
+	Opcode = 0x0119
+	Index = 56
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleGrassUpdate
+	shortname = TGU
+	Opcode = 0x011A
+	Index = 57
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = CenterOnCell
+	shortname = COC
+	Opcode = 0x011B
+	Index = 58
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = SetGameSetting
+	shortname = SetGS
+	Opcode = 0x011C
+	Index = 59
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 0
+	Param2 = 0
+end
+function
+	name = SetINISetting
+	shortname = SetINI
+	help = "setting:category" value
+	Opcode = 0x011D
+	Index = 60
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 0
+	Param2 = 0
+end
+function
+	name = GetINISetting
+	shortname = GetINI
+	help = "setting:category"
+	Opcode = 0x011E
+	Index = 61
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = CenterOnExterior
+	shortname = COE
+	Opcode = 0x011F
+	Index = 62
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 1
+	Param2 = 1
+end
+function
+	name = CalcPathToPoint
+	shortname = P2P
+	Opcode = 0x0120
+	Index = 63
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = CalcLowPathToPoint
+	shortname = LP2P
+	help = ignore locks  allow disabled doors  ignore min use
+	Opcode = 0x0121
+	Index = 64
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 3
+	Param1 = 1
+	Param2 = 1
+	Param3 = 1
+end
+function
+	name = SetFog
+	help = 2 floats  start and end depths
+	Opcode = 0x0122
+	Index = 65
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 1
+	Param2 = 1
+end
+function
+	name = SetClipDist
+	help = float  new clip distance
+	Opcode = 0x0123
+	Index = 66
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2
+end
+function
+	name = ToggleShadowVolumes
+	shortname = TSV
+	Opcode = 0x0124
+	Index = 67
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetImageSpaceGlow
+	shortname = SISG
+	Opcode = 0x0125
+	Index = 68
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 4
+	Param1 = 1
+	Param2 = 2
+	Param3 = 2
+	Param4 = 2
+end
+function
+	name = ToggleDetection
+	shortname = TDETECT
+	Opcode = 0x0126
+	Index = 69
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleHighProcess
+	shortname = THIGHPROCESS
+	Opcode = 0x0127
+	Index = 70
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleLowProcess
+	shortname = TLOWPROCESS
+	Opcode = 0x0128
+	Index = 71
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleMiddleLowProcess
+	shortname = TMLOWPROCESS
+	Opcode = 0x0129
+	Index = 72
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleMiddleHighProcess
+	shortname = TMHIGHPROCESS
+	Opcode = 0x012A
+	Index = 73
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleAiSchedules
+	shortname = TAIS
+	Opcode = 0x012B
+	Index = 74
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SpeakSound
+	Opcode = 0x012C
+	Index = 75
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 3
+	Param1 = 0
+	Param2 = 1, Optional
+	Param3 = 1, Optional
+end
+function
+	name = BetaComment
+	shortname = BC
+	help = Add comment to [General] 'sBetaCommentFile' file.   NOTE: select object first.   [bc "This rock is too high."]
+	Opcode = 0x012D
+	Index = 76
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = ToggleCellNode
+	shortname = TCN
+	help = Toggle 3D for a Cell child node: 0-Actor  1-Marker  2-Land  3-Water  4-Static  5-Active
+	Opcode = 0x012E
+	Index = 77
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = ToggleTrees
+	shortname = TT
+	help = Turn trees on/off
+	Opcode = 0x012F
+	Index = 78
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetCameraFOV
+	shortname = FOV
+	help = Change the camera's field of view (in deg): default 75
+	Opcode = 0x0130
+	Index = 79
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = Verbose
+	shortname = VERBOSE
+	help = Toggle verbose combat/AI messages
+	Opcode = 0x0131
+	Index = 80
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleGodMode
+	shortname = TGM
+	help = Toggle God mode
+	Opcode = 0x0132
+	Index = 81
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = RefreshShaders
+	shortname = REFRESHSHADERS
+	help = Reload HLSL shaders from disk
+	Opcode = 0x0133
+	Index = 82
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleScripts
+	shortname = TSCR
+	help = Turn Script processing on/off
+	Opcode = 0x0134
+	Index = 83
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SexChange
+	help = Selected npc male become female or female becomes male.
+	Opcode = 0x0135
+	Index = 84
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleConversations
+	shortname = TCONV
+	help = Toggle conversation stats
+	Opcode = 0x0136
+	Index = 85
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleFullHelp
+	shortname = TFH
+	help = Toggle Full Help
+	Opcode = 0x0137
+	Index = 86
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowQuestLog
+	shortname = SQL
+	help = Show Quest Log
+	Opcode = 0x0138
+	Index = 87
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = ShowFullQuestLog
+	shortname = SFQL
+	help = Show all log entries for a single quest
+	Opcode = 0x0139
+	Index = 88
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 14
+end
+function
+	name = DumpTexturePalette
+	shortname = DTP
+	help = Dump texture palette contents to warning file  param is sort type   f-filename  s-size  c-count)
+	Opcode = 0x013A
+	Index = 89
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0, Optional
+end
+function
+	name = CenterOnWorld
+	shortname = COW
+	help = [COW worldname -10 5]
+	Opcode = 0x013B
+	Index = 90
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 3
+	Param1 = 27
+	Param2 = 1
+	Param3 = 1
+end
+function
+	name = ToggleGrass
+	shortname = TG
+	help = Toggle grass display.
+	Opcode = 0x013C
+	Index = 91
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = AddFaceAnimNote
+	shortname = AFAN
+	Opcode = 0x013D
+	Index = 92
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = RefreshINI
+	shortname = REFINI
+	help = Refresh INI settings from file.
+	Opcode = 0x013E
+	Index = 93
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleEmotions
+	shortname = temo
+	help = Toggle NPC facial emotions.
+	Opcode = 0x013F
+	Index = 94
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = AddDecal
+	Opcode = 0x0140
+	Index = 95
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = TestCode
+	Opcode = 0x0141
+	Index = 96
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleMapMarkers
+	shortname = tmm
+	help = Toggle map markers (1 shows all  0 hides all).
+	Opcode = 0x0142
+	Index = 97
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = PlayerSpellBook
+	shortname = psb
+	help = Add all spells to player.
+	Opcode = 0x0143
+	Index = 98
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = PrintAiList
+	shortname = pai
+	help = Printed Ai Lists.
+	Opcode = 0x0144
+	Index = 99
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowQuestTargets
+	shortname = SQT
+	help = Show current quest targets
+	Opcode = 0x0145
+	Index = 100
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = HairTint
+	help = 3 ints  RGB
+	Opcode = 0x0146
+	Index = 101
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 3
+	Param1 = 1
+	Param2 = 1
+	Param3 = 1
+end
+function
+	name = SaveGame
+	shortname = save
+	help = SaveGame <filename>
+	Opcode = 0x0147
+	Index = 102
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 0
+	Param2 = 1, Optional
+end
+function
+	name = LoadGame
+	shortname = load
+	help = LoadGame <filename>
+	Opcode = 0x0148
+	Index = 103
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 0
+	Param2 = 1, Optional
+end
+function
+	name = TestAllCells
+	shortname = TAC
+	help = Test All Cells (0 - stop  1 - start  2 - interiors  3 - current world)
+	Opcode = 0x0149
+	Index = 104
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = SaveWorld
+	help = Save hkWorld <filename>
+	Opcode = 0x014A
+	Index = 105
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = ReloadCurrentClimate
+	shortname = rcc
+	help = Reloads values from the current climate
+	Opcode = 0x014B
+	Index = 106
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ReloadCurrentWeather
+	shortname = rcw
+	help = Reloads values from the current weather
+	Opcode = 0x014C
+	Index = 107
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = TestSeenData
+	shortname = tsd
+	help = Visually displays the current seen data
+	Opcode = 0x014D
+	Index = 108
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = TestLocalMap
+	shortname = tlm
+	help = Simulates the local map. (1 or 0 for FOW on or off)
+	Opcode = 0x014E
+	Index = 109
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = MoveToQuestTarget
+	shortname = movetoqt
+	help = Move player to current quest target (optional param: target number).
+	Opcode = 0x014F
+	Index = 110
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = PrintNPCDialog
+	shortname = pdialog
+	help = Prints NPC dialog
+	Opcode = 0x0150
+	Index = 111
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowSubtitle
+	help = show all dialog subtitles (1 shows always  0 hides always)
+	Opcode = 0x0151
+	Index = 112
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = ShowRenderPasses
+	shortname = srp
+	help = display render passes for the next frame
+	Opcode = 0x0152
+	Index = 113
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = FreezeRenderAccumulation
+	shortname = fra
+	help = only re-render geometry visible during this frame
+	Opcode = 0x0153
+	Index = 114
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleOcclusion
+	shortname = tocc
+	help = toggle occlusion query for geometry
+	Opcode = 0x0154
+	Index = 115
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = OutputMemContexts
+	shortname = omc
+	help = Output Mem Context info to a file
+	Opcode = 0x0155
+	Index = 116
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0, Optional
+end
+function
+	name = OutputMemStats
+	shortname = oms
+	help = Output Mem Stats info to a file
+	Opcode = 0x0156
+	Index = 117
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0, Optional
+end
+function
+	name = ToggleDetectionStats
+	shortname = tds
+	help = Show the detection stats of the current seletected Ref.
+	Opcode = 0x0157
+	Index = 118
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6, Optional
+end
+function
+	name = SetTargetRefraction
+	shortname = str
+	help = Sets the refractive value of the target
+	Opcode = 0x0158
+	Index = 119
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2
+end
+function
+	name = SetTargetRefractionFire
+	shortname = strf
+	help = Sets the refractive fire value of the target
+	Opcode = 0x0159
+	Index = 120
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 2
+	Param2 = 1
+end
+function
+	name = ToggleRefractionDebug
+	shortname = trd
+	help = Toggles refraction debug render texture
+	Opcode = 0x015A
+	Index = 121
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleCharControllerShape
+	shortname = TCCS
+	help = Toggle char controller shape type.
+	Opcode = 0x015B
+	Index = 122
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowHeadTrackTarget
+	shortname = SHeadT
+	help = Show the head track target if set from look function
+	Opcode = 0x015C
+	Index = 123
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetSkyParam
+	shortname = SSP
+	help = Sets various values for the sky
+	Opcode = 0x015D
+	Index = 124
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 2
+	Param2 = 2
+end
+function
+	name = SetHDRParam
+	shortname = SHP
+	help = Sets various values for the HDR shader
+	Opcode = 0x015E
+	Index = 125
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 6
+	Param1 = 2
+	Param2 = 2
+	Param3 = 2
+	Param4 = 2
+	Param5 = 2
+	Param6 = 2
+end
+function
+	name = ShowPivot
+	shortname = SP
+	help = Puts a temporary yellow plus at the pivot point of the selected reference.
+	Opcode = 0x015F
+	Index = 126
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = PrintHDRParam
+	shortname = PHP
+	help = Prints current HDR settings.
+	Opcode = 0x0160
+	Index = 127
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleHDRDebug
+	shortname = THD
+	help = Toggles HDR debug textures.
+	Opcode = 0x0161
+	Index = 128
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = RevertWorld
+	shortname = rw
+	help = Revert the world
+	Opcode = 0x0162
+	Index = 129
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = OutputArchiveProfile
+	shortname = oap
+	help = Output Archive profile info to a file
+	Opcode = 0x0163
+	Index = 130
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0, Optional
+end
+function
+	name = QuitGame
+	shortname = qqq
+	help = Exit game without going through menus.
+	Opcode = 0x0164
+	Index = 131
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SaveIniFiles
+	shortname = saveini
+	help = Writes all the .ini files.
+	Opcode = 0x0165
+	Index = 132
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetDebugText
+	shortname = sdt
+	help = Sets which debug text is shown.
+	Opcode = 0x0166
+	Index = 133
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = ToggleLiteBrite
+	shortname = tlb
+	help = Toggles lite brite render mode.
+	Opcode = 0x0167
+	Index = 134
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = RunMemoryPass
+	shortname = rmp
+	help = Runs a cleanup memory pass
+	Opcode = 0x0168
+	Index = 135
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = ResetMemContexts
+	shortname = rmc
+	help = Reset Max Mem Contexts
+	Opcode = 0x0169
+	Index = 136
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleWaterSystem
+	shortname = TWS
+	help = Toggles the water system
+	Opcode = 0x016A
+	Index = 137
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleWaterRadius
+	shortname = TWR
+	Opcode = 0x016B
+	Index = 138
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowWhoDetectsPlayer
+	shortname = SWDP
+	help =  Show who detects the player
+	Opcode = 0x016C
+	Index = 139
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleCombatAI
+	shortname = tcai
+	help = Toggles ALL Combat AI
+	Opcode = 0x016D
+	Index = 140
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleFlyCam
+	shortname = tfc
+	help = Toggles the Free Fly camera (UFO cam).
+	Opcode = 0x016E
+	Index = 141
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ModWaterShader
+	shortname = mws
+	help = Modifies water shader settings
+	Opcode = 0x016F
+	Index = 142
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 0
+	Param2 = 2, Optional
+end
+function
+	name = WaterShallowColor
+	shortname = shallow
+	help = Modifies water shallow color
+	Opcode = 0x0170
+	Index = 143
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 3
+	Param1 = 1
+	Param2 = 1
+	Param3 = 1
+end
+function
+	name = WaterDeepColor
+	shortname = deep
+	help = Modifies water deep color
+	Opcode = 0x0171
+	Index = 144
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 3
+	Param1 = 1
+	Param2 = 1
+	Param3 = 1
+end
+function
+	name = WaterReflectionColor
+	shortname = refl
+	help = Modifies water reflection color
+	Opcode = 0x0172
+	Index = 145
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 3
+	Param1 = 1
+	Param2 = 1
+	Param3 = 1
+end
+function
+	name = BeginTrace
+	shortname = bt
+	help = Creates a trace file (Xenon only)
+	Opcode = 0x0173
+	Index = 146
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = RunCellTest
+	shortname = rct
+	help = Runs a cell test
+	Opcode = 0x0174
+	Index = 147
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = StartAllQuests
+	shortname = saq
+	help = Starts all quests
+	Opcode = 0x0175
+	Index = 148
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = CompleteAllQuestStages
+	shortname = caqs
+	help = Sets all quest stages
+	Opcode = 0x0176
+	Index = 149
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = FlushNonPersistActors
+	shortname = Flush
+	help = Deletes all the actors in High who are not persistant
+	Opcode = 0x0177
+	Index = 150
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = ToggleFogOfWar
+	shortname = TFOW
+	help = Turns fog of war on or off.
+	Opcode = 0x0178
+	Index = 151
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = OutputLocalMapPictures
+	shortname = OLMP
+	help = Writes out the current local map.
+	Opcode = 0x0179
+	Index = 152
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetGamma
+	shortname = sg
+	help = Sets new gamma ramp.
+	Opcode = 0x017A
+	Index = 153
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2
+end
+function
+	name = WasteMemory
+	shortname = wm
+	help = Allocates some memory (in MB).
+	Opcode = 0x017B
+	Index = 154
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2
+end
+function
+	name = ClearAdaptedLight
+	shortname = cal
+	help = Clears the HDR adapted light texture
+	Opcode = 0x017C
+	Index = 155
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ToggleCastShadows
+	shortname = tsh
+	Opcode = 0x017D
+	Index = 156
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = ShowSubSpaces
+	shortname = sss
+	help = Temporarily displays subspaces.
+	Opcode = 0x017E
+	Index = 157
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetSTBBColorConstants
+	shortname = sscc
+	help = Show speedtree billboard color tweak constants.
+	Opcode = 0x017F
+	Index = 158
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 4
+	Param1 = 2, Optional
+	Param2 = 2, Optional
+	Param3 = 2, Optional
+	Param4 = 2, Optional
+end
+function
+	name = CloseFile
+	Opcode = 0x0180
+	Index = 159
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = SetTreeMipmapBias
+	shortname = stmb
+	help = Set mipmap LOD bias values for tree billboards.
+	Opcode = 0x0181
+	Index = 160
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 2, Optional
+	Param2 = 2, Optional
+end
+function
+	name = MessageBox
+	Opcode = 0x1000
+	Index = 162
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = GetDistance
+	Opcode = 0x1001
+	Index = 163
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 4
+end
+function
+	name = AddItem
+	Opcode = 0x1002
+	Index = 164
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 3
+	Param2 = 1
+end
+function
+	name = SetEssential
+	Opcode = 0x1003
+	Index = 165
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 25
+	Param2 = 1, Optional
+end
+function
+	name = Rotate
+	Opcode = 0x1004
+	Index = 166
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 8
+	Param2 = 1
+end
+function
+	name = GetLocked
+	Opcode = 0x1005
+	Index = 167
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetPos
+	Opcode = 0x1006
+	Index = 168
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 8
+end
+function
+	name = SetPos
+	Opcode = 0x1007
+	Index = 169
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 8
+	Param2 = 2
+end
+function
+	name = GetAngle
+	Opcode = 0x1008
+	Index = 170
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 8
+end
+function
+	name = SetAngle
+	Opcode = 0x1009
+	Index = 171
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 8
+	Param2 = 2
+end
+function
+	name = GetStartingPos
+	Opcode = 0x100A
+	Index = 172
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 8
+end
+function
+	name = GetStartingAngle
+	Opcode = 0x100B
+	Index = 173
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 8
+end
+function
+	name = GetSecondsPassed
+	Opcode = 0x100C
+	Index = 174
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = Activate
+	Opcode = 0x100D
+	Index = 175
+	UsesReference = true
+	Flags = 0x100
+	NumParams = 2
+	Param1 = 4, Optional
+	Param2 = 1, Optional
+end
+function
+	name = GetActorValue
+	shortname = GetAV
+	help = Get an actor value. [player.getav luck]
+	Opcode = 0x100E
+	Index = 176
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 5
+end
+function
+	name = SetActorValue
+	shortname = SetAV
+	help = Set an actor value. [player.setav luck  75]
+	Opcode = 0x100F
+	Index = 177
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 5
+	Param2 = 1
+end
+function
+	name = ModActorValue
+	shortname = ModAV
+	help = Modify an actor value. [player.modav luck  -10]
+	Opcode = 0x1010
+	Index = 178
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 5
+	Param2 = 1
+end
+function
+	name = SetAtStart
+	Opcode = 0x1011
+	Index = 179
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetCurrentTime
+	Opcode = 0x1012
+	Index = 180
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = PlayGroup
+	help = IE: PlayGroup SEQNAME 1
+	Opcode = 0x1013
+	Index = 181
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 10
+	Param2 = 1
+end
+function
+	name = LoopGroup
+	Opcode = 0x1014
+	Index = 182
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 3
+	Param1 = 10
+	Param2 = 1
+	Param3 = 1
+end
+function
+	name = SkipAnim
+	Opcode = 0x1015
+	Index = 183
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = StartCombat
+	Opcode = 0x1016
+	Index = 184
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6
+end
+function
+	name = StopCombat
+	Opcode = 0x1017
+	Index = 185
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetScale
+	Opcode = 0x1018
+	Index = 186
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = UnusedFunction1
+	Opcode = 0x1019
+	Index = 187
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = UnusedFunction2
+	Opcode = 0x101A
+	Index = 188
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetLineOfSight
+	shortname = GetLOS
+	Opcode = 0x101B
+	Index = 189
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 4
+end
+function
+	name = AddSpell
+	Opcode = 0x101C
+	Index = 190
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 7
+end
+function
+	name = RemoveSpell
+	Opcode = 0x101D
+	Index = 191
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 7
+end
+function
+	name = Cast
+	Opcode = 0x101E
+	Index = 192
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 11
+	Param2 = 4
+end
+function
+	name = GetButtonPressed
+	Opcode = 0x101F
+	Index = 193
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetInSameCell
+	Opcode = 0x1020
+	Index = 194
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 4
+end
+function
+	name = Enable
+	Opcode = 0x1021
+	Index = 195
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = Disable
+	Opcode = 0x1022
+	Index = 196
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetDisabled
+	Opcode = 0x1023
+	Index = 197
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = MenuMode
+	Opcode = 0x1024
+	Index = 198
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = PlaceAtMe
+	Opcode = 0x1025
+	Index = 199
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 4
+	Param1 = 21
+	Param2 = 1, Optional
+	Param3 = 1, Optional
+	Param4 = 1, Optional
+end
+function
+	name = PlaySound
+	Opcode = 0x1026
+	Index = 200
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 12
+end
+function
+	name = GetDisease
+	Opcode = 0x1027
+	Index = 201
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetVampire
+	Opcode = 0x1028
+	Index = 202
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetClothingValue
+	Opcode = 0x1029
+	Index = 203
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SameFaction
+	Opcode = 0x102A
+	Index = 204
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6
+end
+function
+	name = SameRace
+	Opcode = 0x102B
+	Index = 205
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6
+end
+function
+	name = SameSex
+	Opcode = 0x102C
+	Index = 206
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6
+end
+function
+	name = GetDetected
+	Opcode = 0x102D
+	Index = 207
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6
+end
+function
+	name = GetDead
+	Opcode = 0x102E
+	Index = 208
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetItemCount
+	Opcode = 0x102F
+	Index = 209
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 3
+end
+function
+	name = GetGold
+	Opcode = 0x1030
+	Index = 210
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetSleeping
+	Opcode = 0x1031
+	Index = 211
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetTalkedToPC
+	Opcode = 0x1032
+	Index = 212
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = Say
+	Opcode = 0x1033
+	Index = 213
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 5
+	Param1 = 13
+	Param2 = 1, Optional
+	Param3 = 35, Optional
+	Param4 = 1, Optional
+	Param5 = 1, Optional
+end
+function
+	name = SayTo
+	Opcode = 0x1034
+	Index = 214
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 3
+	Param1 = 6
+	Param2 = 13
+	Param3 = 1, Optional
+end
+function
+	name = GetScriptVariable
+	Opcode = 0x1035
+	Index = 215
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 4
+	Param2 = 22
+end
+function
+	name = StartQuest
+	Opcode = 0x1036
+	Index = 216
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 14
+end
+function
+	name = StopQuest
+	Opcode = 0x1037
+	Index = 217
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 14
+end
+function
+	name = GetQuestRunning
+	shortname = GetQR
+	Opcode = 0x1038
+	Index = 218
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 14
+end
+function
+	name = SetStage
+	Opcode = 0x1039
+	Index = 219
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 14
+	Param2 = 23
+end
+function
+	name = GetStage
+	Opcode = 0x103A
+	Index = 220
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 14
+end
+function
+	name = GetStageDone
+	Opcode = 0x103B
+	Index = 221
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 14
+	Param2 = 23
+end
+function
+	name = GetFactionRankDifference
+	Opcode = 0x103C
+	Index = 222
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 17
+	Param2 = 6
+end
+function
+	name = GetAlarmed
+	Opcode = 0x103D
+	Index = 223
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsRaining
+	Opcode = 0x103E
+	Index = 224
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetAttacked
+	Opcode = 0x103F
+	Index = 225
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetIsCreature
+	Opcode = 0x1040
+	Index = 226
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetLockLevel
+	Opcode = 0x1041
+	Index = 227
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetShouldAttack
+	Opcode = 0x1042
+	Index = 228
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6
+end
+function
+	name = GetInCell
+	Opcode = 0x1043
+	Index = 229
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 9
+end
+function
+	name = GetIsClass
+	Opcode = 0x1044
+	Index = 230
+	UsesReference = true
+	Flags = 0x1
+	NumParams = 1
+	Param1 = 16
+end
+function
+	name = GetIsRace
+	Opcode = 0x1045
+	Index = 231
+	UsesReference = true
+	Flags = 0x1
+	NumParams = 1
+	Param1 = 15
+end
+function
+	name = GetIsSex
+	Opcode = 0x1046
+	Index = 232
+	UsesReference = true
+	Flags = 0x1
+	NumParams = 1
+	Param1 = 18
+end
+function
+	name = GetInFaction
+	Opcode = 0x1047
+	Index = 233
+	UsesReference = true
+	Flags = 0x1
+	NumParams = 1
+	Param1 = 17
+end
+function
+	name = GetIsID
+	Opcode = 0x1048
+	Index = 234
+	UsesReference = true
+	Flags = 0x1
+	NumParams = 1
+	Param1 = 21
+end
+function
+	name = GetFactionRank
+	Opcode = 0x1049
+	Index = 235
+	UsesReference = true
+	Flags = 0x1
+	NumParams = 1
+	Param1 = 17
+end
+function
+	name = GetGlobalValue
+	Opcode = 0x104A
+	Index = 236
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 19
+end
+function
+	name = IsSnowing
+	Opcode = 0x104B
+	Index = 237
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetDisposition
+	Opcode = 0x104C
+	Index = 238
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6
+end
+function
+	name = GetRandomPercent
+	Opcode = 0x104D
+	Index = 239
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = StreamMusic
+	Opcode = 0x104E
+	Index = 240
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = GetQuestVariable
+	Opcode = 0x104F
+	Index = 241
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 14
+	Param2 = 22
+end
+function
+	name = GetLevel
+	Opcode = 0x1050
+	Index = 242
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetArmorRating
+	Opcode = 0x1051
+	Index = 243
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = RemoveItem
+	Opcode = 0x1052
+	Index = 244
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 3
+	Param2 = 1
+end
+function
+	name = ModDisposition
+	Opcode = 0x1053
+	Index = 245
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 6
+	Param2 = 1
+end
+function
+	name = GetDeadCount
+	Opcode = 0x1054
+	Index = 246
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 25
+end
+function
+	name = ShowMap
+	Opcode = 0x1055
+	Index = 247
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 24
+	Param2 = 1, Optional
+end
+function
+	name = StartConversation
+	help = Start a conversation [Bob.StartConversation Joe  SecretTopic]
+	Opcode = 0x1056
+	Index = 248
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 6
+	Param2 = 13, Optional
+end
+function
+	name = Drop
+	Opcode = 0x1057
+	Index = 249
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 3
+	Param2 = 1
+end
+function
+	name = AddTopic
+	Opcode = 0x1058
+	Index = 250
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 13
+end
+function
+	name = Message
+	Opcode = 0x1059
+	Index = 251
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = SetAlert
+	Opcode = 0x105A
+	Index = 252
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetIsAlerted
+	Opcode = 0x105B
+	Index = 253
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = Look
+	Opcode = 0x105C
+	Index = 254
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 4
+end
+function
+	name = StopLook
+	Opcode = 0x105D
+	Index = 255
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = EvaluatePackage
+	shortname = evp
+	Opcode = 0x105E
+	Index = 256
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = Yield
+	Opcode = 0x105F
+	Index = 257
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = EnablePlayerControls
+	Opcode = 0x1060
+	Index = 258
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = DisablePlayerControls
+	Opcode = 0x1061
+	Index = 259
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetPlayerControlsDisabled
+	Opcode = 0x1062
+	Index = 260
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetHeadingAngle
+	Opcode = 0x1063
+	Index = 261
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 4
+end
+function
+	name = PickIdle
+	Opcode = 0x1064
+	Index = 262
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsWeaponOut
+	Opcode = 0x1065
+	Index = 263
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsTorchOut
+	Opcode = 0x1066
+	Index = 264
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsShieldOut
+	Opcode = 0x1067
+	Index = 265
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsYielding
+	Opcode = 0x1068
+	Index = 266
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsActionRef
+	Opcode = 0x1069
+	Index = 267
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 4
+end
+function
+	name = IsFacingUp
+	Opcode = 0x106A
+	Index = 268
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetKnockedState
+	Opcode = 0x106B
+	Index = 269
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetWeaponAnimType
+	Opcode = 0x106C
+	Index = 270
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetWeaponSkillType
+	Opcode = 0x106D
+	Index = 271
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetCurrentAIPackage
+	Opcode = 0x106E
+	Index = 272
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsWaiting
+	Opcode = 0x106F
+	Index = 273
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsIdlePlaying
+	Opcode = 0x1070
+	Index = 274
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = CompleteQuest
+	Opcode = 0x1071
+	Index = 275
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 14
+end
+function
+	name = Lock
+	Opcode = 0x1072
+	Index = 276
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 1, Optional
+	Param2 = 1, Optional
+end
+function
+	name = UnLock
+	Opcode = 0x1073
+	Index = 277
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = GetCrimeGold
+	Opcode = 0x1074
+	Index = 278
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetCrimeGold
+	Opcode = 0x1075
+	Index = 279
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = ModCrimeGold
+	Opcode = 0x1076
+	Index = 280
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetCrimeKnown
+	Opcode = 0x1077
+	Index = 281
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 3
+	Param1 = 28
+	Param2 = 6
+	Param3 = 6
+end
+function
+	name = PositionWorld
+	shortname = PosWorld
+	Opcode = 0x1078
+	Index = 282
+	UsesReference = true
+	Flags = 0x100
+	NumParams = 5
+	Param1 = 2
+	Param2 = 2
+	Param3 = 2
+	Param4 = 2
+	Param5 = 27
+end
+function
+	name = PositionCell
+	shortname = PosCell
+	Opcode = 0x1079
+	Index = 283
+	UsesReference = true
+	Flags = 0x100
+	NumParams = 5
+	Param1 = 2
+	Param2 = 2
+	Param3 = 2
+	Param4 = 2
+	Param5 = 9
+end
+function
+	name = GetCrime
+	Opcode = 0x107A
+	Index = 284
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 6
+	Param2 = 28, Optional
+end
+function
+	name = PayFine
+	Opcode = 0x107B
+	Index = 285
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = PayFineThief
+	Opcode = 0x107C
+	Index = 286
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsGuard
+	Opcode = 0x107D
+	Index = 287
+	UsesReference = true
+	Flags = 0x1
+	NumParams = 0
+end
+function
+	name = GoToJail
+	Opcode = 0x107E
+	Index = 288
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = CanPayCrimeGold
+	Opcode = 0x107F
+	Index = 289
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetFatiguePercentage
+	shortname = GetFatigue
+	Opcode = 0x1080
+	Index = 290
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetPCIsClass
+	Opcode = 0x1081
+	Index = 291
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 16
+end
+function
+	name = GetPCIsRace
+	Opcode = 0x1082
+	Index = 292
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 15
+end
+function
+	name = GetPCIsSex
+	Opcode = 0x1083
+	Index = 293
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 18
+end
+function
+	name = GetPCInFaction
+	Opcode = 0x1084
+	Index = 294
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 17
+end
+function
+	name = SameFactionAsPC
+	Opcode = 0x1085
+	Index = 295
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SameRaceAsPC
+	Opcode = 0x1086
+	Index = 296
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SameSexAsPC
+	Opcode = 0x1087
+	Index = 297
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetIsReference
+	Opcode = 0x1088
+	Index = 298
+	UsesReference = true
+	Flags = 0x1
+	NumParams = 1
+	Param1 = 4
+end
+function
+	name = SetFactionRank
+	Opcode = 0x1089
+	Index = 299
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 17
+	Param2 = 1
+end
+function
+	name = ModFactionRank
+	Opcode = 0x108A
+	Index = 300
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 17
+	Param2 = 1
+end
+function
+	name = KillActor
+	shortname = kill
+	Opcode = 0x108B
+	Index = 301
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6, Optional
+end
+function
+	name = ResurrectActor
+	shortname = resurrect
+	Opcode = 0x108C
+	Index = 302
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = IsTalking
+	Opcode = 0x108D
+	Index = 303
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetWalkSpeed
+	shortname = GetWalk
+	Opcode = 0x108E
+	Index = 304
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetCurrentAIProcedure
+	Opcode = 0x108F
+	Index = 305
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetTrespassWarningLevel
+	Opcode = 0x1090
+	Index = 306
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsTrespassing
+	Opcode = 0x1091
+	Index = 307
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsInMyOwnedCell
+	Opcode = 0x1092
+	Index = 308
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetWindSpeed
+	Opcode = 0x1093
+	Index = 309
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetCurrentWeatherPercent
+	shortname = getweatherpct
+	Opcode = 0x1094
+	Index = 310
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetIsCurrentWeather
+	shortname = getweather
+	Opcode = 0x1095
+	Index = 311
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 34
+end
+function
+	name = IsContinuingPackagePCNear
+	Opcode = 0x1096
+	Index = 312
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = AddScriptPackage
+	Opcode = 0x1097
+	Index = 313
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 29
+end
+function
+	name = RemoveScriptPackage
+	Opcode = 0x1098
+	Index = 314
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = CanHaveFlames
+	Opcode = 0x1099
+	Index = 315
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = HasFlames
+	Opcode = 0x109A
+	Index = 316
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = AddFlames
+	Opcode = 0x109B
+	Index = 317
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = RemoveFlames
+	Opcode = 0x109C
+	Index = 318
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetOpenState
+	Opcode = 0x109D
+	Index = 319
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = MoveToMarker
+	shortname = MoveTo
+	Opcode = 0x109E
+	Index = 320
+	UsesReference = true
+	Flags = 0x100
+	NumParams = 4
+	Param1 = 4
+	Param2 = 2, Optional
+	Param3 = 2, Optional
+	Param4 = 2, Optional
+end
+function
+	name = GetSitting
+	Opcode = 0x109F
+	Index = 321
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetFurnitureMarkerID
+	Opcode = 0x10A0
+	Index = 322
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetIsCurrentPackage
+	Opcode = 0x10A1
+	Index = 323
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 29
+end
+function
+	name = IsCurrentFurnitureRef
+	Opcode = 0x10A2
+	Index = 324
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 4
+end
+function
+	name = IsCurrentFurnitureObj
+	Opcode = 0x10A3
+	Index = 325
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 20
+end
+function
+	name = SetSize
+	shortname = CSize
+	help = Shrink/Grow an actor. [player.shrink 0.0 or radius]
+	Opcode = 0x10A4
+	Index = 326
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2
+end
+function
+	name = RemoveMe
+	Opcode = 0x10A5
+	Index = 327
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 26, Optional
+end
+function
+	name = DropMe
+	Opcode = 0x10A6
+	Index = 328
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetFactionReaction
+	Opcode = 0x10A7
+	Index = 329
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 17
+	Param2 = 17
+end
+function
+	name = SetFactionReaction
+	Opcode = 0x10A8
+	Index = 330
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 3
+	Param1 = 17
+	Param2 = 17
+	Param3 = 1
+end
+function
+	name = ModFactionReaction
+	Opcode = 0x10A9
+	Index = 331
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 3
+	Param1 = 17
+	Param2 = 17
+	Param3 = 1
+end
+function
+	name = GetDayOfWeek
+	Opcode = 0x10AA
+	Index = 332
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsPlayerInJail
+	Opcode = 0x10AB
+	Index = 333
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetTalkedToPCParam
+	Opcode = 0x10AC
+	Index = 334
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6
+end
+function
+	name = RemoveAllItems
+	Opcode = 0x10AD
+	Index = 335
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 26, Optional
+	Param2 = 1, Optional
+end
+function
+	name = WakeUpPC
+	Opcode = 0x10AE
+	Index = 336
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = IsPCSleeping
+	Opcode = 0x10AF
+	Index = 337
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsPCAMurderer
+	Opcode = 0x10B0
+	Index = 338
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetCombatStyle
+	shortname = setcs
+	Opcode = 0x10B1
+	Index = 339
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 30, Optional
+end
+function
+	name = PlaySound3D
+	Opcode = 0x10B2
+	Index = 340
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 12
+end
+function
+	name = SelectPlayerSpell
+	shortname = spspell
+	Opcode = 0x10B3
+	Index = 341
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 7
+end
+function
+	name = GetDetectionLevel
+	Opcode = 0x10B4
+	Index = 342
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6
+end
+function
+	name = IsActorDetected
+	Opcode = 0x10B5
+	Index = 343
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetEquipped
+	Opcode = 0x10B6
+	Index = 344
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 3
+end
+function
+	name = Wait
+	Opcode = 0x10B7
+	Index = 345
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 29
+end
+function
+	name = StopWaiting
+	Opcode = 0x10B8
+	Index = 346
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 29
+end
+function
+	name = IsSwimming
+	Opcode = 0x10B9
+	Index = 347
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ScriptEffectElapsedSeconds
+	Opcode = 0x10BA
+	Index = 348
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetCellPublicFlag
+	shortname = setpublic
+	help = Set public flag on cell. [setpublic MyCell 1]
+	Opcode = 0x10BB
+	Index = 349
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 9
+	Param2 = 1
+end
+function
+	name = GetPCSleepHours
+	Opcode = 0x10BC
+	Index = 350
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetPCSleepHours
+	Opcode = 0x10BD
+	Index = 351
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetAmountSoldStolen
+	Opcode = 0x10BE
+	Index = 352
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ModAmountSoldStolen
+	Opcode = 0x10BF
+	Index = 353
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = CloseCurrentOblivionGate
+	Opcode = 0x10C0
+	Index = 354
+	UsesReference = false
+	Flags = 0x100
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = GetPCExpelled
+	Opcode = 0x10C1
+	Index = 355
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 17
+end
+function
+	name = SetPCExpelled
+	Opcode = 0x10C2
+	Index = 356
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 17
+	Param2 = 1
+end
+function
+	name = GetPCFactionMurder
+	Opcode = 0x10C3
+	Index = 357
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 17
+end
+function
+	name = SetPCFactionMurder
+	Opcode = 0x10C4
+	Index = 358
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 17
+	Param2 = 1
+end
+function
+	name = GetPCFactionSteal
+	Opcode = 0x10C5
+	Index = 359
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 17
+end
+function
+	name = SetPCFactionSteal
+	Opcode = 0x10C6
+	Index = 360
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 17
+	Param2 = 1
+end
+function
+	name = GetPCFactionAttack
+	Opcode = 0x10C7
+	Index = 361
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 17
+end
+function
+	name = SetPCFactionAttack
+	Opcode = 0x10C8
+	Index = 362
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 17
+	Param2 = 1
+end
+function
+	name = GetPCFactionSubmitAuthority
+	Opcode = 0x10C9
+	Index = 363
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 17
+end
+function
+	name = SetPCFactionSubmitAuthority
+	Opcode = 0x10CA
+	Index = 364
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 17
+	Param2 = 1
+end
+function
+	name = GetDestroyed
+	Opcode = 0x10CB
+	Index = 365
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetDestroyed
+	Opcode = 0x10CC
+	Index = 366
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetActionRef
+	shortname = getAR
+	Opcode = 0x10CD
+	Index = 367
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetSelf
+	shortname = this
+	Opcode = 0x10CE
+	Index = 368
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetContainer
+	Opcode = 0x10CF
+	Index = 369
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetForceRun
+	Opcode = 0x10D0
+	Index = 370
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetForceRun
+	Opcode = 0x10D1
+	Index = 371
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetForceSneak
+	Opcode = 0x10D2
+	Index = 372
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetForceSneak
+	Opcode = 0x10D3
+	Index = 373
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = AdvancePCSkill
+	shortname = AdvSkill
+	Opcode = 0x10D4
+	Index = 374
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 5
+	Param2 = 1
+end
+function
+	name = AdvancePCLevel
+	shortname = AdvLevel
+	Opcode = 0x10D5
+	Index = 375
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = HasMagicEffect
+	Opcode = 0x10D6
+	Index = 376
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 31
+end
+function
+	name = GetDoorDefaultOpen
+	help = Returns 1 if this door is open by default.
+	Opcode = 0x10D7
+	Index = 377
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetDoorDefaultOpen
+	help = A value of 1 will make the door open by default.
+	Opcode = 0x10D8
+	Index = 378
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = ShowClassMenu
+	Opcode = 0x10D9
+	Index = 379
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowRaceMenu
+	Opcode = 0x10DA
+	Index = 380
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowBirthSignMenu
+	Opcode = 0x10DB
+	Index = 381
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowNameMenu
+	Opcode = 0x10DC
+	Index = 382
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetOpenState
+	help = A value of 1 will make the door open.
+	Opcode = 0x10DD
+	Index = 383
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = CloseOblivionGate
+	Opcode = 0x10DE
+	Index = 384
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = IsSpellTarget
+	Opcode = 0x10DF
+	Index = 385
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 11
+end
+function
+	name = GetIsPlayerBirthsign
+	shortname = GetPBS
+	Opcode = 0x10E0
+	Index = 386
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 32
+end
+function
+	name = GetPersuasionNumber
+	Opcode = 0x10E1
+	Index = 387
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = VampireFeed
+	Opcode = 0x10E2
+	Index = 388
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6
+end
+function
+	name = HasVampireFed
+	Opcode = 0x10E3
+	Index = 389
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetIsClassDefault
+	Opcode = 0x10E4
+	Index = 390
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 16
+end
+function
+	name = GetClassDefaultMatch
+	Opcode = 0x10E5
+	Index = 391
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetInCellParam
+	Opcode = 0x10E6
+	Index = 392
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 9
+	Param2 = 4
+end
+function
+	name = SetInChargen
+	help = A value of 1 will be in chargen.
+	Opcode = 0x10E7
+	Index = 393
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetCombatTarget
+	Opcode = 0x10E8
+	Index = 394
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetPackageTarget
+	Opcode = 0x10E9
+	Index = 395
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowSpellMaking
+	Opcode = 0x10EA
+	Index = 396
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ShowEnchantment
+	Opcode = 0x10EB
+	Index = 397
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetGhost
+	help = A value of 1 will make the NPC act as a 'ghost'.
+	Opcode = 0x10EC
+	Index = 398
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetIsGhost
+	help = Returns 1 if the actor is acting as a 'ghost'.
+	Opcode = 0x10ED
+	Index = 399
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = EquipItem
+	shortname = EquipObject
+	Opcode = 0x10EE
+	Index = 400
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 3
+	Param2 = 1, Optional
+end
+function
+	name = UnequipItem
+	shortname = UnEquipObject
+	Opcode = 0x10EF
+	Index = 401
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 3
+	Param2 = 1, Optional
+end
+function
+	name = SetClass
+	Opcode = 0x10F0
+	Index = 402
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 16
+end
+function
+	name = SetUnconscious
+	help = A value of 1 will be unconscious.
+	Opcode = 0x10F1
+	Index = 403
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetUnconscious
+	help = Returns 1 if is unconscious.
+	Opcode = 0x10F2
+	Index = 404
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetRestrained
+	help = A value of 1 will be restrained.
+	Opcode = 0x10F3
+	Index = 405
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetRestrained
+	help = Returns 1 if is restrained.
+	Opcode = 0x10F4
+	Index = 406
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ForceFlee
+	shortname = Flee
+	help = Forces a actor to flee if destination or cell is passed in uses them
+	Opcode = 0x10F5
+	Index = 407
+	UsesReference = true
+	Flags = 0x100
+	NumParams = 2
+	Param1 = 9, Optional
+	Param2 = 4, Optional
+end
+function
+	name = GetIsUsedItem
+	Opcode = 0x10F6
+	Index = 408
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 21
+end
+function
+	name = GetIsUsedItemType
+	Opcode = 0x10F7
+	Index = 409
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 33
+end
+function
+	name = ModPCFame
+	help = modifies the fame of player
+	Opcode = 0x10F8
+	Index = 410
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetPCFame
+	help = returns the player's fame
+	Opcode = 0x10F9
+	Index = 411
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ModPCInfamy
+	help = modifies the player's infamy
+	Opcode = 0x10FA
+	Index = 412
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetPCInfamy
+	help = returns the player's infamy
+	Opcode = 0x10FB
+	Index = 413
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetPCFame
+	help = set the player's fame to param
+	Opcode = 0x10FC
+	Index = 414
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = SetPCInfamy
+	help = set the player's infamy to param
+	Opcode = 0x10FD
+	Index = 415
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetIsPlayableRace
+	Opcode = 0x10FE
+	Index = 416
+	UsesReference = true
+	Flags = 0x1
+	NumParams = 0
+end
+function
+	name = GetOffersServicesNow
+	Opcode = 0x10FF
+	Index = 417
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetGameSetting
+	shortname = GetGS
+	Opcode = 0x1100
+	Index = 418
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = StopCombatAlarmOnActor
+	shortname = SCAOnActor
+	Opcode = 0x1101
+	Index = 419
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetUsedItemLevel
+	Opcode = 0x1102
+	Index = 420
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetUsedItemActivate
+	Opcode = 0x1103
+	Index = 421
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetWeather
+	shortname = sw
+	help = Sets the active weather to the specified type
+	Opcode = 0x1104
+	Index = 422
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 34
+	Param2 = 1, Optional
+end
+function
+	name = ForceTakeCover
+	shortname = TakeCover
+	help = Forces a actor to move away from the target actor for a period of time
+	Opcode = 0x1105
+	Index = 423
+	UsesReference = true
+	Flags = 0x100
+	NumParams = 2
+	Param1 = 6
+	Param2 = 1
+end
+function
+	name = ModBarterGold
+	Opcode = 0x1106
+	Index = 424
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = SetBarterGold
+	Opcode = 0x1107
+	Index = 425
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetBarterGold
+	Opcode = 0x1108
+	Index = 426
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsTimePassing
+	Opcode = 0x1109
+	Index = 427
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsPleasant
+	Opcode = 0x110A
+	Index = 428
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsCloudy
+	Opcode = 0x110B
+	Index = 429
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = TrapUpdate
+	Opcode = 0x110C
+	Index = 430
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetQuestObject
+	Opcode = 0x110D
+	Index = 431
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 21
+	Param2 = 1
+end
+function
+	name = ForceActorValue
+	shortname = ForceAV
+	help = Does modav XXX (value - getav XXX). [player.forceav luck 25]
+	Opcode = 0x110E
+	Index = 432
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 5
+	Param2 = 1
+end
+function
+	name = ModPCSkill
+	shortname = ModPCS
+	help = Modify the Players Skill. [modpcs Blunt  10]
+	Opcode = 0x110F
+	Index = 433
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 5
+	Param2 = 1
+end
+function
+	name = ModPCAttribute
+	shortname = ModPCA
+	help = Modify an actor value. [modpca luck  10]
+	Opcode = 0x1110
+	Index = 434
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 5
+	Param2 = 1
+end
+function
+	name = EnableFastTravel
+	shortname = EnableFast
+	Opcode = 0x1111
+	Index = 435
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetArmorRatingUpperBody
+	Opcode = 0x1112
+	Index = 436
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetParentRef
+	Opcode = 0x1113
+	Index = 437
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = PlayBink
+	Opcode = 0x1114
+	Index = 438
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 0
+	Param2 = 1, Optional
+end
+function
+	name = GetBaseActorValue
+	shortname = GetBaseAV
+	help = Get a base actor value. [player.getbaseav luck]
+	Opcode = 0x1115
+	Index = 439
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 5
+end
+function
+	name = IsOwner
+	help = get the ownership of the ref
+	Opcode = 0x1116
+	Index = 440
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 36, Optional
+end
+function
+	name = SetOwnership
+	Opcode = 0x1117
+	Index = 441
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 36, Optional
+end
+function
+	name = IsCellOwner
+	help = get the ownership of the ref
+	Opcode = 0x1118
+	Index = 442
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 9
+	Param2 = 36, Optional
+end
+function
+	name = SetCellOwnership
+	Opcode = 0x1119
+	Index = 443
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 9
+	Param2 = 36, Optional
+end
+function
+	name = IsHorseStolen
+	Opcode = 0x111A
+	Index = 444
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetCellFullName
+	Opcode = 0x111B
+	Index = 445
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 9
+	Param2 = 0
+end
+function
+	name = SetActorFullName
+	Opcode = 0x111C
+	Index = 446
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = IsLeftUp
+	Opcode = 0x111D
+	Index = 447
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsSneaking
+	Opcode = 0x111E
+	Index = 448
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsRunning
+	Opcode = 0x111F
+	Index = 449
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetFriendHit
+	Opcode = 0x1120
+	Index = 450
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6
+end
+function
+	name = IsInCombat
+	Opcode = 0x1121
+	Index = 451
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetPackDuration
+	shortname = SPDur
+	Opcode = 0x1122
+	Index = 452
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2
+end
+function
+	name = PlayMagicShaderVisuals
+	shortname = PMS
+	Opcode = 0x1123
+	Index = 453
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 37
+	Param2 = 2, Optional
+end
+function
+	name = PlayMagicEffectVisuals
+	shortname = PME
+	Opcode = 0x1124
+	Index = 454
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 31
+	Param2 = 2, Optional
+end
+function
+	name = StopMagicShaderVisuals
+	shortname = SMS
+	Opcode = 0x1125
+	Index = 455
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 37
+end
+function
+	name = StopMagicEffectVisuals
+	shortname = SME
+	Opcode = 0x1126
+	Index = 456
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 31
+end
+function
+	name = ResetInterior
+	Opcode = 0x1127
+	Index = 457
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 9
+end
+function
+	name = IsAnimPlaying
+	Opcode = 0x1128
+	Index = 458
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetActorAlpha
+	shortname = SAA
+	Opcode = 0x1129
+	Index = 459
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2
+end
+function
+	name = EnableLinkedPathPoints
+	Opcode = 0x112A
+	Index = 460
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = DisableLinkedPathPoints
+	Opcode = 0x112B
+	Index = 461
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsInInterior
+	Opcode = 0x112C
+	Index = 462
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ForceWeather
+	shortname = fw
+	help = Forces the active weather to the specified type  without transition.
+	Opcode = 0x112D
+	Index = 463
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 34
+	Param2 = 1, Optional
+end
+function
+	name = ToggleActorsAI
+	Opcode = 0x112E
+	Index = 464
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsActorsAIOff
+	Opcode = 0x112F
+	Index = 465
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetInvestmentGold
+	Opcode = 0x1130
+	Index = 466
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetInvestmentGold
+	Opcode = 0x1131
+	Index = 467
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsActorUsingATorch
+	Opcode = 0x1132
+	Index = 468
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetLevel
+	Opcode = 0x1133
+	Index = 469
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 4
+	Param1 = 1
+	Param2 = 1, Optional
+	Param3 = 1, Optional
+	Param4 = 1, Optional
+end
+function
+	name = ResetFallDamageTimer
+	Opcode = 0x1134
+	Index = 470
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsXBox
+	Opcode = 0x1135
+	Index = 471
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetInWorldspace
+	Opcode = 0x1136
+	Index = 472
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 27
+end
+function
+	name = ModPCMiscStat
+	shortname = ModPCMS
+	Opcode = 0x1137
+	Index = 473
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 1
+	Param2 = 1
+end
+function
+	name = GetPCMiscStat
+	shortname = GetPCMS
+	Opcode = 0x1138
+	Index = 474
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = IsActorEvil
+	Opcode = 0x1139
+	Index = 475
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsActorAVictim
+	Opcode = 0x113A
+	Index = 476
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetTotalPersuasionNumber
+	Opcode = 0x113B
+	Index = 477
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetScale
+	help = Set the scale of an object
+	Opcode = 0x113C
+	Index = 478
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2
+end
+function
+	name = ModScale
+	help = Modify the scale of an object
+	Opcode = 0x113D
+	Index = 479
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2
+end
+function
+	name = GetIdleDoneOnce
+	Opcode = 0x113E
+	Index = 480
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = KillAllActors
+	shortname = killall
+	Opcode = 0x113F
+	Index = 481
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6, Optional
+end
+function
+	name = GetNoRumors
+	Opcode = 0x1140
+	Index = 482
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetNoRumors
+	Opcode = 0x1141
+	Index = 483
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = Dispel
+	Opcode = 0x1142
+	Index = 484
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 11
+end
+function
+	name = WhichServiceMenu
+	Opcode = 0x1143
+	Index = 485
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = TriggerHitShader
+	shortname = ths
+	Opcode = 0x1144
+	Index = 486
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2, Optional
+end
+function
+	name = RefreshTopicList
+	Opcode = 0x1145
+	Index = 487
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = Reset3DState
+	Opcode = 0x1146
+	Index = 488
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsRidingHorse
+	Opcode = 0x1147
+	Index = 489
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = DispelAllSpells
+	Opcode = 0x1148
+	Index = 490
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsTurnArrest
+	Opcode = 0x1149
+	Index = 491
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = AddAchievement
+	Opcode = 0x114A
+	Index = 492
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = DuplicateAllItems
+	Opcode = 0x114B
+	Index = 493
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 2
+	Param1 = 26, Optional
+	Param2 = 1, Optional
+end
+function
+	name = IsInDangerousWater
+	Opcode = 0x114C
+	Index = 494
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = EssentialDeathReload
+	Opcode = 0x114D
+	Index = 495
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 0
+end
+function
+	name = SetShowQuestItems
+	Opcode = 0x114E
+	Index = 496
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = DuplicateNPCStats
+	Opcode = 0x114F
+	Index = 497
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6, Optional
+end
+function
+	name = ResetHealth
+	Opcode = 0x1150
+	Index = 498
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetIgnoreFriendlyHits
+	shortname = sifh
+	help = Set whether an actor should ignore friendly hits (0-no  1-yes)
+	Opcode = 0x1151
+	Index = 499
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = GetIgnoreFriendlyHits
+	shortname = gifh
+	help = See if an actor is ignoring friendly hits
+	Opcode = 0x1152
+	Index = 500
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsPlayersLastRiddenHorse
+	Opcode = 0x1153
+	Index = 501
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetActorRefraction
+	shortname = sar
+	Opcode = 0x1154
+	Index = 502
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2
+end
+function
+	name = SetItemValue
+	Opcode = 0x1155
+	Index = 503
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = SetRigidBodyMass
+	Opcode = 0x1156
+	Index = 504
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 2
+end
+function
+	name = ShowViewerStrings
+	shortname = svs
+	Opcode = 0x1157
+	Index = 505
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = ReleaseWeatherOverride
+	shortname = rwo
+	Opcode = 0x1158
+	Index = 506
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = SetAllReachable
+	Opcode = 0x1159
+	Index = 507
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = SetAllVisible
+	Opcode = 0x115A
+	Index = 508
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = SetNoAvoidance
+	Opcode = 0x115B
+	Index = 509
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = SendTrespassAlarm
+	Opcode = 0x115C
+	Index = 510
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 6
+end
+function
+	name = SetSceneIsComplex
+	Opcode = 0x115D
+	Index = 511
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1
+end
+function
+	name = Autosave
+	Opcode = 0x115E
+	Index = 512
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = StartMasterFileSeekData
+	Opcode = 0x115F
+	Index = 513
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = DumpMasterFileSeekData
+	Opcode = 0x1160
+	Index = 514
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsActor
+	Opcode = 0x1161
+	Index = 515
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = IsEssential
+	Opcode = 0x1162
+	Index = 516
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = PreloadMagicEffect
+	Opcode = 0x1163
+	Index = 517
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 31
+end
+function
+	name = ShowDialogSubtitles
+	Opcode = 0x1164
+	Index = 518
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = ForceCloseOblivionGate
+	Opcode = 0x1165
+	Index = 519
+	UsesReference = false
+	Flags = 0x100
+	NumParams = 1
+	Param1 = 1, Optional
+end
+function
+	name = IsPlayerMovingIntoNewSpace
+	Opcode = 0x1166
+	Index = 520
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = CreateFullActorCopy
+	Opcode = 0x1167
+	Index = 521
+	UsesReference = true
+	Flags = 0x100
+	NumParams = 0
+end
+function
+	name = DeleteFullActorCopy
+	Opcode = 0x1168
+	Index = 522
+	UsesReference = true
+	Flags = 0x100
+	NumParams = 0
+end
+function
+	name = GetTimeDead
+	Opcode = 0x1169
+	Index = 523
+	UsesReference = true
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = GetPlayerHasLastRiddenHorse
+	Opcode = 0x116A
+	Index = 524
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end
+function
+	name = PurgeCellBuffers
+	shortname = pcb
+	help = Forcibly unloads all unattached cells in cell buffers.
+	Opcode = 0x116B
+	Index = 525
+	UsesReference = false
+	Flags = 0x0
+	NumParams = 0
+end

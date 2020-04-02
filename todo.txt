@@ -1,0 +1,31 @@
+
+TODO:
+	- General error handling for application/view
+	- Multiple mod file handler
+	- Export/import for multiple record types per file?
+	- Prepare the strings for export/import all at once?
+	- Proper use of mod index
+	- Runtime modification of mod index for an ESP file
+	- Progress dialog doesn't hide if you switch out of app during load?
+	- Ctrl-A to select all in main list.
+	- Import using formIDs in CSV?
+	- Check if error output method works fine (switch to using ObEditShowLastError by default?)
+	- Change the FormID map from holding a CObBaseRecord to a CObRecord
+	- Generalize CSV export/import procedures?
+	- Change to using a generic template map for indices?
+	- Cleanup the find binary data implementation in the view class
+	- Code for getting/setting 64 bit file position to compile in gcc
+	- Hooks for customizing certain events (run a certain DOS/Windows command). 
+	- Use custom external applications for editting certain types of resources (scripts, book
+	  texts, images, models, icons, etc...).
+	- Custom dialogs for selecting records/objects (scripts, icons, models, images, etc...).
+	- Common implementation for looping through all items in record list or all selected
+	  items in record list.
+	- Implementation for looping through all records/groups in a file or files?
+	- Combine index and record tree creation steps in multi-record handler.
+	- Complete find implementation.
+	- Make Icon record option in CObItem1Record
+	- Ctrl-A select all in record list.
+	- Keyboard shortcut for Save/Apply in record dialogs.
+	- Progress dialog for large multiple selection record operations (eg: move to active).
+

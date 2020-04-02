@@ -1,0 +1,858 @@
+#
+# Start top level filters
+#
+DisplayFilter
+	DisplayName = Activators
+	RecName = ACTI
+	Parent = NULL
+End
+DisplayFilter
+	ID = "Ammo"
+	DisplayName = "Ammo"
+	RecName = AMMO
+	Parent = NULL
+End
+DisplayFilter
+	ID = "Apparatus"
+	DisplayName = "Apparatus"
+	RecName = APPA
+	Parent = NULL
+End	
+DisplayFilter
+	ID = "Armors"
+	DisplayName = "Armors"
+	RecName = ARMO
+	Parent = NULL
+End	
+DisplayFilter
+	ID = "Books"
+	RecName = BOOK
+	Parent = NULL
+End	
+DisplayFilter
+	ID = "Clothing"
+	RecName = CLOT
+	Parent = NULL
+End	
+DisplayFilter
+	DisplayName = Containers
+	RecName = CONT
+	Parent = NULL
+End
+DisplayFilter
+	ID = "Enchantments"
+	RecName = ENCH
+	Parent = NULL
+End	
+DisplayFilter
+	DisplayName = Flora
+	RecName = FLOR
+	Parent = NULL
+End
+DisplayFilter
+	DisplayName = Furniture
+	RecName = FURN
+	Parent = NULL
+End
+DisplayFilter
+	ID = "Ingredients"
+	RecName = INGR
+	Parent = NULL
+End	
+DisplayFilter
+	ID = "Keys"
+	RecName = KEYM
+	Parent = NULL
+End	
+DisplayFilter
+	ID = "Level Creatures"
+	RecName = LVLC
+	Parent = NULL
+End
+DisplayFilter
+	ID = "Level Items"
+	RecName = LVLI
+	Parent = NULL
+End
+DisplayFilter
+	ID = "Level Spells"
+	RecName = LVSP
+	Parent = NULL
+End
+DisplayFilter
+	ID = "Lights"
+	RecName = LIGH
+	Parent = NULL
+End	
+DisplayFilter
+	ID = "Misc"
+	RecName = MISC
+	Parent = NULL
+End	
+DisplayFilter
+	ID = "Potions"
+	RecName = ALCH
+	Parent = NULL
+End	
+DisplayFilter
+	ID = "Scripts"
+	RecName = SCPT
+	Parent = NULL
+End
+DisplayFilter
+	ID = "Sigil Stones"
+	RecName = SGST
+	Parent = NULL
+End
+DisplayFilter
+	ID = "Soul Gems"
+	RecName = SLGM
+	Parent = NULL
+End
+DisplayFilter
+	ID = "Sounds"
+	RecName = SOUN
+	Parent = NULL
+End
+DisplayFilter
+	ID = "Spells"
+	RecName = SPEL
+	Parent = NULL
+End
+DisplayFilter
+	DisplayName = Statics
+	RecName = STAT
+	Parent = NULL
+End
+DisplayFilter
+	ID = "Weapons"
+	RecName = WEAP
+	Parent = NULL
+End	
+DisplayFilter
+	ID = "WorldObjects"
+	DisplayName = "WorldObjects"
+	Empty = true
+End
+#
+# Start ARMO filters
+#
+DisplayFilter
+	ID = "ArmoMaterials"
+	DisplayName = Materials
+	RecName = ARMO
+	Parent = Armors
+	Empty = true
+End
+DisplayFilter
+	ID = "ArmoLocations"
+	DisplayName = Locations
+	RecName = ARMO
+	Parent = Armors
+	Empty = true
+End
+#
+# Armor-Location Children
+#
+DisplayFilter
+	ID = "ArmoBoots"
+	DisplayName = Boots
+	RecName = ARMO
+	BipedParts = Foot
+	Parent = ArmoLocations
+End
+DisplayFilter
+	ID = "ArmoCuirass"
+	DisplayName = Cuirass
+	RecName = ARMO
+	BipedParts = Upper Body
+	Parent = ArmoLocations
+End
+DisplayFilter
+	ID = "ArmoGauntlets"
+	DisplayName = Gauntlets
+	RecName = ARMO
+	BipedParts = Hand
+	Parent = ArmoLocations
+End
+DisplayFilter
+	ID = "ArmoGreaves"
+	DisplayName = Greaves
+	RecName = ARMO
+	BipedParts = Lower Body
+	Parent = ArmoLocations
+End
+DisplayFilter
+	ID = "ArmoHelmets"
+	DisplayName = Helmets
+	RecName = ARMO
+	BipedParts = Hair
+	Parent = ArmoLocations
+End
+DisplayFilter
+	ID = "ArmoRobes"
+	DisplayName = Robes
+	RecName = ARMO
+	BipedParts = Upper Body | Lower Body
+	BipedCompare = AND
+	Parent = ArmoLocations
+End
+DisplayFilter
+	ID = "Shield"
+	DisplayName = Shield
+	RecName = ARMO
+	BipedParts = Shield
+	Parent = ArmoLocations
+End
+#
+# Armor - Material Children
+#
+DisplayFilter
+	ID = "ArmoFur"
+	DisplayName = Fur
+	RecName = ARMO
+	Material = Fur
+	Parent = ArmoMaterials
+End
+DisplayFilter
+	ID = "ArmoLeather"
+	DisplayName = Leather
+	RecName = ARMO
+	Material = Leather
+	Parent = ArmoMaterials
+End
+DisplayFilter
+	ID = "ArmoChainmail"
+	DisplayName = Chainmail
+	RecName = ARMO
+	Material = Chainmail
+	Parent = ArmoMaterials
+End
+DisplayFilter
+	ID = "ArmoMithril"
+	DisplayName = Mithril
+	RecName = ARMO
+	Material = Mithril
+	Parent = ArmoMaterials
+End
+DisplayFilter
+	ID = "ArmoElven"
+	DisplayName = Elven
+	RecName = ARMO
+	Material = Elven
+	Parent = ArmoMaterials
+End
+DisplayFilter
+	ID = "ArmoGlass"
+	DisplayName = Glass
+	RecName = ARMO
+	Material = Glass
+	Parent = ArmoMaterials
+End
+DisplayFilter
+	ID = "ArmoEldar"
+	DisplayName = Eldar
+	RecName = ARMO
+	Material = Eldar
+	Parent = ArmoMaterials
+End
+DisplayFilter
+	ID = "ArmoDrakefire"
+	DisplayName = Drakefire
+	RecName = ARMO
+	Material = Drakefire
+	Parent = ArmoMaterials
+End
+###############################
+DisplayFilter
+	ID = "ArmoIron"
+	DisplayName = Iron
+	RecName = ARMO
+	Material = Iron
+	Parent = ArmoMaterials
+End
+DisplayFilter
+	ID = "ArmoSteel"
+	DisplayName = Steel
+	RecName = ARMO
+	Material = Steel
+	Parent = ArmoMaterials
+End
+DisplayFilter
+	ID = "ArmoDwarven"
+	DisplayName = Dwarven
+	RecName = ARMO
+	Material = Dwarven
+	Parent = ArmoMaterials
+End
+DisplayFilter
+	ID = "ArmoOrcish"
+	DisplayName = Orcish
+	RecName = ARMO
+	Material = Orcish
+	Parent = ArmoMaterials
+End
+DisplayFilter
+	ID = "ArmoEbony"
+	DisplayName = Ebony
+	RecName = ARMO
+	Material = Ebony
+	Parent = ArmoMaterials
+End
+DisplayFilter
+	ID = "ArmoDaedric"
+	DisplayName = Daedric
+	RecName = ARMO
+	Material = Daedric
+	Parent = ArmoMaterials
+End
+#
+# Armor - Light/Heavy
+#
+DisplayFilter
+	ID = "ArmoLight"
+	DisplayName = Light
+	RecName = ARMO
+	ArmorType = Light
+	Parent = Armors
+End
+DisplayFilter
+	ID = "ArmoHeavy"
+	DisplayName = Heavy
+	RecName = ARMO
+	ArmorType = Heavy
+	Parent = Armors
+End
+# 
+# Armor - Light Children
+#
+DisplayFilter
+	ID = "ArmoLightBoots"
+	DisplayName = Boots
+	RecName = ARMO
+	BipedParts = Foot
+	ArmorType = Light
+	Parent = ArmoLight
+End
+DisplayFilter
+	ID = "ArmoLightCuirass"
+	DisplayName = Cuirass
+	RecName = ARMO
+	BipedParts = Upper Body
+	ArmorType = Light
+	Parent = ArmoLight
+End
+DisplayFilter
+	ID = "ArmoLightGauntlets"
+	DisplayName = Gauntlets
+	RecName = ARMO
+	BipedParts = Hand
+	ArmorType = Light
+	Parent = ArmoLight
+End
+DisplayFilter
+	ID = "ArmoLightGreaves"
+	DisplayName = Greaves
+	RecName = ARMO
+	BipedParts = Lower Body
+	ArmorType = Light
+	Parent = ArmoLight
+End
+DisplayFilter
+	ID = "ArmoLightHead"
+	DisplayName = Head
+	RecName = ARMO
+	BipedParts = Hair
+	ArmorType = Light
+	Parent = ArmoLight
+End
+DisplayFilter
+	ID = "ArmoLightRobes"
+	DisplayName = Robes
+	RecName = ARMO
+	BipedParts = Upper Body | Lower Body
+	BipedCompare = AND
+	ArmorType = Light
+	Parent = ArmoLight
+End
+DisplayFilter
+	ID = "ArmoLightShield"
+	DisplayName = Shield
+	RecName = ARMO
+	BipedParts = Shield
+	ArmorType = Light
+	Parent = ArmoLight
+End
+# 
+# Armor - Heavy Children
+#
+DisplayFilter
+	ID = "ArmoHeavyBoots"
+	DisplayName = Boots
+	RecName = ARMO
+	BipedParts = Foot
+	ArmorType = Heavy
+	Parent = ArmoHeavy
+End
+DisplayFilter
+	ID = "ArmoHeavyCuirass"
+	DisplayName = Cuirass
+	RecName = ARMO
+	BipedParts = Upper Body
+	ArmorType = Heavy
+	Parent = ArmoHeavy
+End
+DisplayFilter
+	ID = "ArmoHeavyGauntlets"
+	DisplayName = Gauntlets
+	RecName = ARMO
+	BipedParts = Hand
+	ArmorType = Heavy
+	Parent = ArmoHeavy
+End
+DisplayFilter
+	ID = "ArmoHeavyGreaves"
+	DisplayName = Greaves
+	RecName = ARMO
+	BipedParts = Lower Body
+	ArmorType = Heavy
+	Parent = ArmoHeavy
+End
+DisplayFilter
+	ID = "ArmoHeavyHead"
+	DisplayName = Head
+	RecName = ARMO
+	BipedParts = Hair
+	ArmorType = Heavy
+	Parent = ArmoHeavy
+End
+DisplayFilter
+	ID = "ArmoHeavyRobes"
+	DisplayName = Robes
+	RecName = ARMO
+	BipedParts = Upper Body | Lower Body
+	BipedCompare = AND
+	ArmorType = Heavy
+	Parent = ArmoHeavy
+End
+DisplayFilter
+	ID = "ArmoHeavyShield"
+	DisplayName = Shield
+	RecName = ARMO
+	BipedParts = Shield
+	ArmorType = Heavy
+	Parent = ArmoHeavy
+End
+#
+# Start Clothing filters
+#
+DisplayFilter
+	ID = "ClotLocations"
+	DisplayName = Locations
+	RecName = CLOT
+	Parent = Clothing
+	Empty = true
+End
+DisplayFilter
+	ID = "ClotAmulets"
+	DisplayName = Amulets
+	RecName = CLOT
+	BipedParts = Amulet
+	Parent = ClotLocations
+End
+DisplayFilter
+	ID = "ClotBoots"
+	DisplayName = Boots
+	RecName = CLOT
+	BipedParts = Foot
+	Parent = ClotLocations
+End
+DisplayFilter
+	ID = "ClotShirts"
+	DisplayName = Shirts
+	RecName = CLOT
+	BipedParts = Upper Body
+	Parent = ClotLocations
+End
+DisplayFilter
+	ID = "ClotGloves"
+	DisplayName = Gloves
+	RecName = CLOT
+	BipedParts = Hand
+	Parent = ClotLocations
+End
+DisplayFilter
+	ID = "ClotPants"
+	DisplayName = Pants
+	RecName = CLOT
+	BipedParts = Lower Body
+	Parent = ClotLocations
+End
+DisplayFilter
+	ID = "ClotHats"
+	DisplayName = Hats
+	RecName = CLOT
+	BipedParts = Hair
+	Parent = ClotLocations
+End
+DisplayFilter
+	ID = "ClotRings"
+	DisplayName = Rings
+	RecName = CLOT
+	BipedParts = Right Ring | Left Ring
+	BipedCompare = OR
+	Parent = ClotLocations
+End
+DisplayFilter
+	ID = "ClotRobes"
+	DisplayName = Robes
+	RecName = CLOT
+	BipedParts = Upper Body | Lower Body
+	BipedCompare = AND
+	Parent = ClotLocations
+End
+#
+# Start Weapon Filters
+#
+DisplayFilter
+	ID = "Weap1HandBlade"
+	DisplayName = 1-Hand Blade
+	RecName = WEAP
+	Parent = Weapons
+	WeaponType = Blade One Hand
+End
+DisplayFilter
+	ID = "Weap2HandBlade"
+	DisplayName = 2-Hand Blade
+	RecName = WEAP
+	Parent = Weapons
+	WeaponType = Blade Two Hand
+End
+DisplayFilter
+	ID = "Weap1HandBlunt"
+	DisplayName = 1-Hand Blunt
+	RecName = WEAP
+	Parent = Weapons
+	WeaponType = Blunt One Hand
+End
+DisplayFilter
+	ID = "Weap2HandBlunt"
+	DisplayName = 2-Hand Blunt
+	RecName = WEAP
+	Parent = Weapons
+	WeaponType = Blunt Two Hand
+End
+DisplayFilter
+	ID = "WeapBow"
+	DisplayName = Bow
+	RecName = WEAP
+	Parent = Weapons
+	WeaponType = Bow
+End
+DisplayFilter
+	ID = "WeapStaffs"
+	DisplayName = Staffs
+	RecName = WEAP
+	Parent = Weapons
+	WeaponType = Staff
+End
+#
+# World Objects
+#
+DisplayFilter
+	DisplayName = Activators
+	RecName = ACTI
+	Parent = WorldObjects
+End
+DisplayFilter
+	DisplayName = Containers
+	RecName = CONT
+	Parent = WorldObjects
+End
+DisplayFilter
+	DisplayName = Flora
+	RecName = FLOR
+	Parent = WorldObjects
+End
+DisplayFilter
+	DisplayName = Furniture
+	RecName = FURN
+	Parent = WorldObjects
+End
+DisplayFilter
+	DisplayName = Lights
+	RecName = LIGH
+	Parent = WorldObjects
+End
+DisplayFilter
+	DisplayName = Statics
+	RecName = STAT
+	Parent = WorldObjects
+End
+
+#
+# Apparatus Types
+#
+DisplayFilter
+	ID = "APPA-Alembic"
+	DisplayName = "Alembic"
+	RecName = APPA
+	Parent = Apparatus
+	Field = Type, Alembic
+End
+DisplayFilter
+	ID = "APPA-Calcinator"
+	DisplayName = "Calcinator"
+	RecName = APPA
+	Parent = Apparatus
+	Field = Type, Calcinator
+End
+DisplayFilter
+	ID = "APPA-Mortar"
+	DisplayName = "Mortar/Pestle"
+	RecName = APPA
+	Parent = Apparatus
+	Field = Type, Mortar
+End
+DisplayFilter
+	ID = "APPA-Retort"
+	DisplayName = "Retort"
+	RecName = APPA
+	Parent = Apparatus
+	Field = Type, Retort
+End
+
+#
+# Book Types
+#
+DisplayFilter
+	ID = "BOOK-Book"
+	DisplayName = "Books"
+	RecName = BOOK
+	Parent = Books
+	Field = Scroll, false
+End
+DisplayFilter
+	ID = "BOOK-Scroll"
+	DisplayName = "Scrolls"
+	RecName = BOOK
+	Parent = Books
+	Field = Scroll, true
+End
+
+#
+# Enchantment Types
+#
+DisplayFilter
+	ID = "ENCH-Apparel"
+	DisplayName = "Apparel"
+	RecName = ENCH
+	Parent = Enchantments
+	Field = Type, Apparel
+End
+DisplayFilter
+	ID = "ENCH-Scroll"
+	DisplayName = "Scroll"
+	RecName = ENCH
+	Parent = Enchantments
+	Field = Type, Scroll
+End
+DisplayFilter
+	ID = "ENCH-Staff"
+	DisplayName = "Staff"
+	RecName = ENCH
+	Parent = Enchantments
+	Field = Type, Staff
+End
+DisplayFilter
+	ID = "ENCH-Weapon"
+	DisplayName = "Weapon"
+	RecName = ENCH
+	Parent = Enchantments
+	Field = Type, Weapon
+End
+
+#
+# Light Types
+#
+DisplayFilter
+	ID = "LIGH-Carry"
+	DisplayName = "Carried"
+	RecName = LIGH
+	Parent = Lights
+	Field = Carried, true
+End
+DisplayFilter
+	ID = "LIGH-NoCarry"
+	DisplayName = "Not Carried"
+	RecName = LIGH
+	Parent = Lights
+	Field = Carried, false
+End
+
+
+#
+# Script Types
+#
+DisplayFilter
+	ID = "SCPT-MagicEffect"
+	DisplayName = "Magic Effect"
+	RecName = SCPT
+	Parent = Scripts
+	Field = Type, Magic Effect
+End
+DisplayFilter
+	ID = "SCPT-Object"
+	DisplayName = "Object"
+	RecName = SCPT
+	Parent = Scripts
+	Field = Type, Object
+End
+DisplayFilter
+	ID = "SCPT-Quest"
+	DisplayName = "Quest"
+	RecName = SCPT
+	Parent = Scripts
+	Field = Type, Quest
+End
+
+#
+# Soul Gems
+#
+DisplayFilter
+	ID = "SLGM-Petty"
+	DisplayName = "Petty"
+	RecName = SLGM
+	Parent = Soul Gems
+	Field = Capacity, Petty
+End
+DisplayFilter
+	ID = "SLGM-Lesser"
+	DisplayName = "Lesser"
+	RecName = SLGM
+	Parent = Soul Gems
+	Field = Capacity, Lesser
+End
+DisplayFilter
+	ID = "SLGM-Common"
+	DisplayName = "Common"
+	RecName = SLGM
+	Parent = Soul Gems
+	Field = Capacity, Common
+End
+DisplayFilter
+	ID = "SLGM-Greater"
+	DisplayName = "Greater"
+	RecName = SLGM
+	Parent = Soul Gems
+	Field = Capacity, Greater
+End
+DisplayFilter
+	ID = "SLGM-Grand"
+	DisplayName = "Grand"
+	RecName = SLGM
+	Parent = Soul Gems
+	Field = Capacity, Grand
+End
+DisplayFilter
+	ID = "SLGM-Filled"
+	DisplayName = "Filled"
+	RecName = SLGM
+	Parent = Soul Gems
+	FieldNot = Soul, None
+End
+
+#
+# Spells
+#
+DisplayFilter
+	ID = "SPEL-Types"
+	DisplayName = "Types"
+	RecName = SPEL
+	Parent = Spells
+	Empty = true
+End
+DisplayFilter
+	ID = "SPEL-Levels"
+	DisplayName = "Levels"
+	RecName = SPEL
+	Parent = Spells
+	Empty = true
+End
+DisplayFilter
+	ID = "SPEL-Ability"
+	DisplayName = "Ability"
+	RecName = SPEL
+	Parent = SPEL-Types
+	Field = Type, Ability
+End
+DisplayFilter
+	ID = "SPEL-Disease"
+	DisplayName = "Disease"
+	RecName = SPEL
+	Parent = SPEL-Types
+	Field = Type, Disease
+End
+DisplayFilter
+	ID = "SPEL-LesserPower"
+	DisplayName = "Lesser Power"
+	RecName = SPEL
+	Parent = SPEL-Types
+	Field = Type, Lesser Power
+End
+DisplayFilter
+	ID = "SPEL-Poison"
+	DisplayName = "Poison"
+	RecName = SPEL
+	Parent = SPEL-Types
+	Field = Type, Poison
+End
+DisplayFilter
+	ID = "SPEL-Power"
+	DisplayName = "Power"
+	RecName = SPEL
+	Parent = SPEL-Types
+	Field = Type, Power
+End
+DisplayFilter
+	ID = "SPEL-Spell"
+	DisplayName = "Spell"
+	RecName = SPEL
+	Parent = SPEL-Types
+	Field = Type, Spell
+End
+DisplayFilter
+	ID = "SPEL-Novice"
+	DisplayName = "Novice"
+	RecName = SPEL
+	Parent = SPEL-Levels
+	Field = Level, Novice
+End
+DisplayFilter
+	ID = "SPEL-Apprentice"
+	DisplayName = "Apprentice"
+	RecName = SPEL
+	Parent = SPEL-Levels
+	Field = Level, Apprentice
+End
+DisplayFilter
+	ID = "SPEL-Journeyman"
+	DisplayName = "Journeyman"
+	RecName = SPEL
+	Parent = SPEL-Levels
+	Field = Level, Journeyman
+End
+DisplayFilter
+	ID = "SPEL-Expert"
+	DisplayName = "Expert"
+	RecName = SPEL
+	Parent = SPEL-Levels
+	Field = Level, Expert
+End
+DisplayFilter
+	ID = "SPEL-Master"
+	DisplayName = "Master"
+	RecName = SPEL
+	Parent = SPEL-Levels
+	Field = Level, Master
+End

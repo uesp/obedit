@@ -1,0 +1,1575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{367148a9-e0d8-4e33-bb1a-63942b2e25b2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Forms">
+      <UniqueIdentifier>{d5dc539a-3a6c-4e9b-a222-106368b66460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Forms\Dialogs">
+      <UniqueIdentifier>{573ec1f7-37f4-4f93-95f9-ad606188ab74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Forms\Base">
+      <UniqueIdentifier>{2e8484ec-5658-4f15-a5c1-f6087fd78c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Forms\CommonDlg">
+      <UniqueIdentifier>{4c8448d8-1475-4726-bc22-0242b17333ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Misc">
+      <UniqueIdentifier>{2c4883ad-127f-45ef-9fc8-342fa7806aad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{e9c80932-2d8c-43d4-b111-ece96d60a49e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Devil">
+      <UniqueIdentifier>{5de7113c-e854-4d4d-a17f-74de3ecc3e0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ESP">
+      <UniqueIdentifier>{d326fc5c-e4cf-465c-9d57-acb87c188b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ESP\Records">
+      <UniqueIdentifier>{903fd7cc-f9ff-4f61-9bea-da5155bbd8a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ESP\Subrecords">
+      <UniqueIdentifier>{f53a3294-cbeb-4c98-bf91-389c35e5301b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ESP\Groups">
+      <UniqueIdentifier>{10946ec1-7d3e-4be9-8ef7-add88e0390e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ESP\Handler">
+      <UniqueIdentifier>{4ebd559f-283d-499c-bf0c-438ef2d9934a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ESP\Compiler">
+      <UniqueIdentifier>{a19b585c-f65f-418d-99a1-7ea9728c4b22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ESP\Events">
+      <UniqueIdentifier>{36b6fe63-b2dd-4669-8868-97ac6058ae26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ESP\Bsa">
+      <UniqueIdentifier>{156e452e-dbd0-4751-bd92-41af7654ff1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{cd0373e2-edbb-4a16-9cbb-7c9a944d25d7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Forms.">
+      <UniqueIdentifier>{e6a93c05-fa00-4b1f-b10b-0a88668c8a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Forms.\Dialogs.">
+      <UniqueIdentifier>{9c19e711-92fc-4ba2-a468-0f4e3ca06a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Forms.\Base.">
+      <UniqueIdentifier>{da8394e4-8309-4215-bcd1-091de2ca3fed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Forms.\CommonDlg.">
+      <UniqueIdentifier>{1c11ab7d-db7a-4f4d-8f63-8507c72a4e7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Misc.">
+      <UniqueIdentifier>{a2bb9c6f-92fc-401e-b56e-345e6d7da0e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ESP.">
+      <UniqueIdentifier>{7adfa2d4-c121-4d45-929e-b6c07022bf73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ESP.\Records.">
+      <UniqueIdentifier>{f39f8e91-d6fd-4fc2-bcaa-7a17cd7b2c83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ESP.\Subrecords.">
+      <UniqueIdentifier>{a15e6683-43f0-41fc-9ca1-364bfd624005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ESP.\Groups.">
+      <UniqueIdentifier>{39bb4ea2-9925-4909-bb28-f86d5027fdc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ESP.\Handler.">
+      <UniqueIdentifier>{9aad9084-14a8-4232-8c10-4cfec71fea6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ESP.\Compiler.">
+      <UniqueIdentifier>{0dde2a71-f137-4e70-bb92-33722f57cb7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ESP.\Events.">
+      <UniqueIdentifier>{fcc18c99-83ad-4e36-93bd-60d938889eef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ESP.\Bsa.">
+      <UniqueIdentifier>{3eeab3f6-428c-4abc-a891-f4926633ae20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common.">
+      <UniqueIdentifier>{998508c6-f425-4ce2-a9de-f3bbae49c261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common.\Devil.">
+      <UniqueIdentifier>{5c38750e-ca0e-4170-ae1d-47b22022e173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0d30b105-516b-4fd7-9be5-209020029db6}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ObActiView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObAlchView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObAmmoView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObAppaView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogs\obarmorview.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObBatchEditDlg.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogs\obbipedpartsdlg.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObBipedPartsListDlg.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObBookView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObClotView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObCntoEditDlg.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObContView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObEffectEditDlg.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogs\obenchview.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObFindDlg.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObFlorView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObFurnView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObIngrView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObKeymView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObLighView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObLvlcView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObLvlEditDlg.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObLvliView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObLvspView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObMiscView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObScptView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObScriptErrorView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObSgstView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="OBSlgmView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObSounView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObSpelView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObStatView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObWeapView.cpp">
+      <Filter>Source Files\Forms\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogs\obeditdlghandler.cpp">
+      <Filter>Source Files\Forms\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="dialogs\obrecorddialog.cpp">
+      <Filter>Source Files\Forms\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="ObSelectRecordDlg.cpp">
+      <Filter>Source Files\Forms\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorStatic.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorBar.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="obbatchlistctrl.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ObImageCtrl.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ObInputDialog.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ObPromptDlg.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\windows\obrecordlistctrl.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\windows\obrecordtreectrl.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\windows\obrecordvirtuallistctrl.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\windows\scbarcf.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\windows\scbarg.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\windows\sizecbar.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\windows\tabctrlsheet.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="UndoBar.cpp">
+      <Filter>Source Files\Forms\CommonDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="aboutdlg.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrmFix.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrmScript.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="obeditView.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ObErrorDlg.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ObFileTreeDlg.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ObFindBinaryDlg.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ObLoadDlg.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="obprogressdlg.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="obresourceview.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\csvfile.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\filebuffer.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obcallback.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obconfigentry.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obconfigfile.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\oberror.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\oberrorhandler.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obfile.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\oblogfile.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obmemfile.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obptrarray.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obtime.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\obutils.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\sstring.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\common\textutils.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obachrrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obacrerecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obactirecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obalchrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obammorecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obaniorecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obapparecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obarmorecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obbasereccont.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obbaserecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obbaserefrrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obbookrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obbsgnrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obcellrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obclmtrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obclotrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obcontrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obcrearecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obdialrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obdoorrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obeffitemrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obenchrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obfactrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obflorrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obfurnrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obidlerecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obidrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obinforecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obingrrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obitem1record.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obitem2record.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obkeymrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\oblandrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\oblighrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\oblscrrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obltexrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\oblvlcrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\oblvlirecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\oblvsprecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obmgefrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obmiscrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obnpcrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obpackrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obpgrdrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obqustrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obracerecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obreccont.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obrefrrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obregnrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obscptrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obsgstrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obslgmrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obsounrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obspelrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obstatrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obtes4record.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obwatrrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obweaprecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obwrldrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obwthrrecord.cpp">
+      <Filter>Source Files\ESP\Records</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obctdasubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obctdtsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obdatasubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obefitsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obenitsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obformidarraysubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obhedrsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obnamesubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obpgrlsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obrdgssubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obrdotsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obrdsdsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obrdwtsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obscitsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obspitsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obstring1subrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obstringsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obsubreccont.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\subrecords\obwlstsubrecord.cpp">
+      <Filter>Source Files\ESP\Subrecords</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\groups\obfilegroup.cpp">
+      <Filter>Source Files\ESP\Groups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\groups\obgroup.cpp">
+      <Filter>Source Files\ESP\Groups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\groups\obgrupcont.cpp">
+      <Filter>Source Files\ESP\Groups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\groups\obtypegroup.cpp">
+      <Filter>Source Files\ESP\Groups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obmultirecordhandler.cpp">
+      <Filter>Source Files\ESP\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obsimplerecordhandler.cpp">
+      <Filter>Source Files\ESP\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obundoitem.cpp">
+      <Filter>Source Files\ESP\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\charclass.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\charclassarray.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\customcompiler.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\obfixedparser.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="obscripterrors.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\obscriptfunction.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\obscriptfunctions.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\obscriptutils.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\scansourcestring.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\tokentable.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\tokentablearray.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\tokentableresult.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\tokentablerow.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\tokentype.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\compiler\tokentypearray.cpp">
+      <Filter>Source Files\ESP\Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obeventhandler.cpp">
+      <Filter>Source Files\ESP\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obbsafile.cpp">
+      <Filter>Source Files\ESP\Bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obbsafilerecord.cpp">
+      <Filter>Source Files\ESP\Bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obbsafolder.cpp">
+      <Filter>Source Files\ESP\Bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obresourcefile.cpp">
+      <Filter>Source Files\ESP\Bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obresourcefolder.cpp">
+      <Filter>Source Files\ESP\Bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obresourcehandler.cpp">
+      <Filter>Source Files\ESP\Bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\bsafile\obresourceinstance.cpp">
+      <Filter>Source Files\ESP\Bsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\records\obcheckrecord.cpp">
+      <Filter>Source Files\ESP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obespfile.cpp">
+      <Filter>Source Files\ESP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obexport.cpp">
+      <Filter>Source Files\ESP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obfields.cpp">
+      <Filter>Source Files\ESP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obimport.cpp">
+      <Filter>Source Files\ESP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obmoddefs.cpp">
+      <Filter>Source Files\ESP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obrecordcreate.cpp">
+      <Filter>Source Files\ESP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\windows\obrecordfilter.cpp">
+      <Filter>Source Files\ESP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tes4lib\modfile\obrectype.cpp">
+      <Filter>Source Files\ESP</Filter>
+    </ClCompile>
+    <ClCompile Include="obedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="obeditDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="obedit.rc">
+      <Filter>Source Files\Misc</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="devil\lib\DevIL.lib">
+      <Filter>Source Files\Common\Devil</Filter>
+    </Library>
+    <Library Include="devil\lib\ILU.lib">
+      <Filter>Source Files\Common\Devil</Filter>
+    </Library>
+    <Library Include="devil\lib\ILUT.lib">
+      <Filter>Source Files\Common\Devil</Filter>
+    </Library>
+    <Library Include="..\tes4lib\common\zlib\zdll.lib">
+      <Filter>Source Files\Common</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ObActiView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObAlchView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObAmmoView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObAppaView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="dialogs\obarmorview.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObBatchEditDlg.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="dialogs\obbipedpartsdlg.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObBipedPartsListDlg.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObBookView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObClotView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObContView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObEffectEditDlg.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="dialogs\obenchview.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObFindDlg.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObFlorView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObFurnView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObIngrView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObKeymView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObLighView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObLvlcView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObLvliView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObLvspView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObMiscView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObScptView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObSgstView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="OBSlgmView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObSounView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObSpelView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObStatView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObWeapView.h">
+      <Filter>Header Files\Forms.\Dialogs.</Filter>
+    </ClInclude>
+    <ClInclude Include="dialogs\obeditdlghandler.h">
+      <Filter>Header Files\Forms.\Base.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObLvlEditDlg.h">
+      <Filter>Header Files\Forms.\Base.</Filter>
+    </ClInclude>
+    <ClInclude Include="dialogs\obrecorddialog.h">
+      <Filter>Header Files\Forms.\Base.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObSelectRecordDlg.h">
+      <Filter>Header Files\Forms.\Base.</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorStatic.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorBar.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="obbatchlistctrl.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObCntoEditDlg.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObImageCtrl.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObInputDialog.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObPromptDlg.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\windows\obrecordlistctrl.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\windows\obrecordtreectrl.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\windows\obrecordvirtuallistctrl.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObScriptErrorView.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\windows\scbarcf.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\windows\scbarg.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\windows\sizecbar.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\windows\tabctrlsheet.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="UndoBar.h">
+      <Filter>Header Files\Forms.\CommonDlg.</Filter>
+    </ClInclude>
+    <ClInclude Include="aboutdlg.h">
+      <Filter>Header Files\Forms.</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files\Forms.</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrmFix.h">
+      <Filter>Header Files\Forms.</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrmScript.h">
+      <Filter>Header Files\Forms.</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files\Forms.</Filter>
+    </ClInclude>
+    <ClInclude Include="obeditView.h">
+      <Filter>Header Files\Forms.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObErrorDlg.h">
+      <Filter>Header Files\Forms.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObFileTreeDlg.h">
+      <Filter>Header Files\Forms.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObFindBinaryDlg.h">
+      <Filter>Header Files\Forms.</Filter>
+    </ClInclude>
+    <ClInclude Include="ObLoadDlg.h">
+      <Filter>Header Files\Forms.</Filter>
+    </ClInclude>
+    <ClInclude Include="obprogressdlg.h">
+      <Filter>Header Files\Forms.</Filter>
+    </ClInclude>
+    <ClInclude Include="obresourceview.h">
+      <Filter>Header Files\Forms.</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files\Misc.</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files\Misc.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obachrrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obacrerecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obactirecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obalchrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obammorecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obaniorecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obapparecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obarmorecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obbasereccont.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obbaserecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obbaserefrrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obbookrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obbsgnrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obcellrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obclmtrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obclotrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obcontrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obcrearecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obdialrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obdoorrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obeffitemrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obenchrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obfactrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obflorrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obfurnrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obidlerecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obidrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obinforecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obingrrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obitem1record.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obitem2record.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obkeymrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\oblandrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\oblighrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\oblscrrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obltexrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\oblvlcrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\oblvlirecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\oblvsprecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obmgefrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obmiscrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obnpcrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obpackrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obpgrdrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obqustrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obracerecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obreccont.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obrefrrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obregnrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obscptrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obsgstrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obslgmrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obsounrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obspelrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obstatrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obtes4record.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obwatrrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obweaprecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obwrldrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obwthrrecord.h">
+      <Filter>Header Files\ESP.\Records.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obammodatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obappadatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obarmodatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obatxtsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obbookdatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obbytesubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obclotdatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obcntosubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obcontdatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obctdasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obctdtsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obdatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obdnamsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obdwordsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obefitsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obenamsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obenit8subrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obenitsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obfloatsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obformidarraysubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obformidsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obhedrsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obidledatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obingrenitsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obint64subrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obkeymdatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\oblighdatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\oblnamsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\oblongsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\oblvlosubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obmgefdatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obmiscdatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obnamesubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obpfpcsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obpgrlsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obpldtsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obposanglesubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obpositionsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obptdtsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obqstasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obrdgssubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obrdotsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obrdsdsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obrdwtsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obrefrdatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obschrsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obscitsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obscrosubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obsgstdatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obslgmdatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obslsdsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obsnamsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obsndxsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obspitsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obstring1subrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obstringsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obsubreccont.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obvnamsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obvtexsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obweapdatasubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obwlstsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obwordsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obxespsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obxlocsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obxnamsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\subrecords\obxtelsubrecord.h">
+      <Filter>Header Files\ESP.\Subrecords.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\groups\obblockgroup.h">
+      <Filter>Header Files\ESP.\Groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\groups\obfilegroup.h">
+      <Filter>Header Files\ESP.\Groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\groups\obformidgroup.h">
+      <Filter>Header Files\ESP.\Groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\groups\obgridgroup.h">
+      <Filter>Header Files\ESP.\Groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\groups\obgroup.h">
+      <Filter>Header Files\ESP.\Groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\groups\obgrupcont.h">
+      <Filter>Header Files\ESP.\Groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\groups\obtypegroup.h">
+      <Filter>Header Files\ESP.\Groups.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\obmultirecordhandler.h">
+      <Filter>Header Files\ESP.\Handler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\obrecordhandler.h">
+      <Filter>Header Files\ESP.\Handler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\obsimplerecordhandler.h">
+      <Filter>Header Files\ESP.\Handler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\obundoitem.h">
+      <Filter>Header Files\ESP.\Handler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\charclass.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\charclassarray.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\customcompiler.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\obfixedparser.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="obscripterrors.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\obscriptfunction.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\obscriptfunctions.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\obscriptutils.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\scansource.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\scansourcestring.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\tokentable.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\tokentablearray.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\tokentableresult.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\tokentablerow.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\tokentype.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\compiler\tokentypearray.h">
+      <Filter>Header Files\ESP.\Compiler.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\obeventhandler.h">
+      <Filter>Header Files\ESP.\Events.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\oblistener.h">
+      <Filter>Header Files\ESP.\Events.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\oblistenevent.h">
+      <Filter>Header Files\ESP.\Events.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\bsafile\obbsafile.h">
+      <Filter>Header Files\ESP.\Bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\bsafile\obbsafilerecord.h">
+      <Filter>Header Files\ESP.\Bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\bsafile\obbsafolder.h">
+      <Filter>Header Files\ESP.\Bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\bsafile\obresourcebase.h">
+      <Filter>Header Files\ESP.\Bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\bsafile\obresourcefile.h">
+      <Filter>Header Files\ESP.\Bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\bsafile\obresourcefolder.h">
+      <Filter>Header Files\ESP.\Bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\bsafile\obresourcehandler.h">
+      <Filter>Header Files\ESP.\Bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\bsafile\obresourceinstance.h">
+      <Filter>Header Files\ESP.\Bsa.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obcheckrecord.h">
+      <Filter>Header Files\ESP.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\obespfile.h">
+      <Filter>Header Files\ESP.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\obexport.h">
+      <Filter>Header Files\ESP.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\obfields.h">
+      <Filter>Header Files\ESP.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\obimport.h">
+      <Filter>Header Files\ESP.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\obmoddefs.h">
+      <Filter>Header Files\ESP.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obrecordfield.h">
+      <Filter>Header Files\ESP.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\windows\obrecordfilter.h">
+      <Filter>Header Files\ESP.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\records\obrecordmap.h">
+      <Filter>Header Files\ESP.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\modfile\obrectype.h">
+      <Filter>Header Files\ESP.</Filter>
+    </ClInclude>
+    <ClInclude Include="devil\include\IL\config.h">
+      <Filter>Header Files\Common.\Devil.</Filter>
+    </ClInclude>
+    <ClInclude Include="devil\include\IL\il.h">
+      <Filter>Header Files\Common.\Devil.</Filter>
+    </ClInclude>
+    <ClInclude Include="devil\include\IL\ilu.h">
+      <Filter>Header Files\Common.\Devil.</Filter>
+    </ClInclude>
+    <ClInclude Include="devil\include\IL\ilut.h">
+      <Filter>Header Files\Common.\Devil.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\csvfile.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\dl_map.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\filebuffer.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obarray.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obblockallocator.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obcallback.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obconfigentry.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obconfigfile.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\oberror.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\oberrorhandler.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obfile.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\oblogfile.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obmemfile.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obplatform.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obptrarray.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obsimplemap.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obtime.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obtypes.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obutils.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\obversion.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\sstring.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\textutils.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\zlib\zconf.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tes4lib\common\zlib\zlib.h">
+      <Filter>Header Files\Common.</Filter>
+    </ClInclude>
+    <ClInclude Include="obedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="obeditDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\armor.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\file.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\find_dlg.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\folder.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\obedit.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\obedit.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\obeditDoc.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="compiler.txt" />
+    <CustomBuild Include="displayfilters.dat" />
+    <CustomBuild Include="functions.dat" />
+    <CustomBuild Include="obedit.ini" />
+    <CustomBuild Include="obedit.log" />
+    <CustomBuild Include="ReadMe.txt" />
+    <CustomBuild Include="testtable.dat" />
+    <CustomBuild Include="testtable1.dat" />
+    <CustomBuild Include="todo.txt" />
+  </ItemGroup>
+</Project>

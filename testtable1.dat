@@ -1,0 +1,159 @@
+CharClasses
+	Digit		= 0..9
+	Alpha		= a..z A..Z
+	EndLine		= \n null
+	Comment		= ;
+	WhiteSpace	= space \t \r
+	Quote		= "
+	IDStart		= a..z A..Z _
+	ID			= a..z A..Z 0..9 _
+	Bracket 	= ( )
+	EndString   = any !\n !" !null
+	EndLine		= \n
+	Equal		= =
+	Decimal		= .
+	AddOp	    = + -
+	MultOp      = * / %
+	RelOp		= = < > \!
+	Comma		= ,
+	Null		= \0
+End
+
+Tokens
+	Unknown		 = 0, keep
+	LBracket	 = 1, simple
+	RBracket	 = 2, simple
+	AddOp		 = 3, keep
+	MultOp       = 4, keep
+	RelOp        = 5, keep
+	BoolOp       = 6, keep
+	String		 = 16, keep, trimfirst, trimlast
+	Identifier	 = 17, keep
+	If			 = 18, simple
+	Elseif		 = 19, simple
+	Else		 = 20, simple
+	Endif		 = 21, simple
+	Set			 = 22, simple
+	Scriptname	 = 23, simple
+	Begin		 = 24, simple
+	End			 = 25, simple
+	Comment		 = 26, ignore
+	EndLine		 = 27, simple	
+	Integer		 = 28, keep
+	Float		 = 29, keep
+	RefCall		 = 30, simple
+	Return       = 31, simple
+	Comma		 = 32, simple
+	Short        = 33, simple
+	Long         = 34, simple
+	Float        = 35, simple
+	Ref          = 36, simple
+	To			 = 37, simple
+	EndofProgram = 38, simple, endtoken
+End
+
+Begin
+	Comment		= moveto Comment_Table
+	Digit		= moveto Digit_Table
+	Quote		= moveto String_Table
+	IDStart		= moveto ID_Table
+	(			= return LBracket
+	)			= return RBracket
+	AddOp		= return AddOp
+	MultOp		= return MultOp
+	&			= moveto And_Table
+	|			= moveto Or_Table
+	Equal		= moveto EQ_Table
+	>			= moveto GT_Table
+	<			= moveto LT_Table
+	!			= moveto NEQ_Table
+	.			= moveto Ref_Table
+	EndLine		= return endline
+	WhiteSpace	= ignore
+	`			= ignore
+	Comma		= return comma
+	Null		= return endline
+	Default		= error Unknown character found!
+End
+
+Ref_Table
+	Digit = moveto Decimal_Table
+	default = jmpreturn RefCall
+End
+
+And_Table
+	&		= return BoolOp
+	Default = jmpreturn Unknown
+End
+
+Or_Table
+	|		= return BoolOp
+	Default = jmpreturn Unknown
+End
+
+Digit_Table
+	Digit		= continue
+	Decimal		= moveto Decimal_Table
+	Default		= jmpreturn Integer
+End
+
+Decimal_Table
+	Digit		= continue
+	Default		= jmpreturn Float
+End
+
+String_Table
+	Quote		= return String
+	EndString	= moveto String_Table
+	Default		= error Unterminated string found! Ensure all strings end with a quote character.
+End
+	
+ID_Table
+	ID		= continue
+	Default = jumpto CheckKeyWord_Table
+End
+
+CheckKeyWord_Table
+	"if"			= jmpreturn if
+	"endif"			= jmpreturn endif
+	"set"			= jmpreturn set
+	"to"			= jmpreturn to
+	"elseif"		= jmpreturn elseif
+	"else"			= jmpreturn else
+	"endif"			= jmpreturn endif
+	"begin"			= jmpreturn begin
+	"end"			= jmpreturn end
+	"scriptname"	= jmpreturn scriptname
+	"scn"			= jmpreturn scriptname
+	"return"		= jmpreturn return
+	"short"	    	= jmpreturn short
+	"long"	    	= jmpreturn long
+	"float"	    	= jmpreturn float
+	"ref"	    	= jmpreturn ref
+	Default			= jmpreturn Identifier
+End
+
+Comment_Table
+	EndLine = jmpreturn Comment
+	Default = continue
+End
+
+EQ_Table
+	Equal	= return RelOp
+	Default = error Unexpected = found! Valid comparison operators are: <, >, <=, >=, ==, and !=
+End
+
+GT_Table
+	Equal	= return RelOp 
+	Default = jmpreturn RelOp
+End
+
+LT_Table
+	Equal	= return RelOp
+	Default = jmpreturn RelOp
+End
+
+NEQ_Table
+	Equal	= return RelOp
+	Default = error Unexpected ! found! Valid comparison operators are: <, >, <=, >=, ==, and !=
+End
